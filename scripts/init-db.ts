@@ -1,4 +1,4 @@
-import { initDatabase } from '../src/lib/db';
+import { initDatabase } from '../src/lib/mysql';
 
 async function main() {
   console.log('Initializing database...');
