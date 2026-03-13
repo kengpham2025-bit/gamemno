@@ -1,60 +1,29 @@
-import { connectToDatabase, getCollection, ObjectId } from './mongodb';
+import { query, initDatabase } from './mysql';
 import crypto from 'crypto';
-
-export async function initDatabase(): Promise<void> {
-  const db = await connectToDatabase();
-  
-  // Create collections if they don't exist
-  const collections = [
-    'account',
-    'proxy',
-    'admin_users',
-    'admin_bank',
-    'admin_crypto',
-    'login_logs',
-    'admin_momo',
-    'admin_thecao',
-    'admin_telco',
-    'paygate_transactions'
-  ];
-
-  for (const collName of collections) {
-    const colls = await db.listCollections({ name: collName }).toArray();
-    if (colls.length === 0) {
-      await db.createCollection(collName);
-      console.log(`Created collection: ${collName}`);
-    }
-  }
-
-  // Create indexes
-  await db.collection('account').createIndex({ username: 1, game: 1 }, { unique: true });
-  await db.collection('account').createIndex({ token: 1 });
-  await db.collection('account').createIndex({ session: 1 });
-  await db.collection('login_logs').createIndex({ username: 1 });
-  await db.collection('login_logs').createIndex({ login_time: -1 });
-  await db.collection('admin_bank').createIndex({ is_active: 1 });
-  await db.collection('admin_crypto').createIndex({ is_active: 1 });
-  await db.collection('paygate_transactions').createIndex({ method: 1 });
-  await db.collection('paygate_transactions').createIndex({ status: 1 });
-  await db.collection('paygate_transactions').createIndex({ created_at: -1 });
-  
-  console.log('Database initialized successfully!');
-}
 
 // Account operations
 export async function findAccountByUsername(username: string, game: string = '789Club') {
-  const coll = await getCollection('account');
-  return coll.findOne({ username, game });
+  const rows = await query(
+    'SELECT * FROM account WHERE username = ? AND game = ?',
+    [username, game]
+  );
+  return rows[0] || null;
 }
 
 export async function findAccountByToken(token: string, game: string = '789Club') {
-  const coll = await getCollection('account');
-  return coll.findOne({ $or: [{ token }, { session: token }], game });
+  const rows = await query(
+    'SELECT * FROM account WHERE (token = ? OR session = ?) AND game = ?',
+    [token, token, game]
+  );
+  return rows[0] || null;
 }
 
 export async function findAccountBySession(session: string, game: string = '789Club') {
-  const coll = await getCollection('account');
-  return coll.findOne({ session, game });
+  const rows = await query(
+    'SELECT * FROM account WHERE session = ? AND game = ?',
+    [session, game]
+  );
+  return rows[0] || null;
 }
 
 export async function upsertAccount(
@@ -65,36 +34,19 @@ export async function upsertAccount(
   session: string,
   game: string = '789Club'
 ) {
-  const coll = await getCollection('account');
+  const existing = await findAccountByUsername(username, game);
   const now = new Date();
-  
-  const existing = await coll.findOne({ username, game });
-  
+
   if (existing) {
-    await coll.updateOne(
-      { _id: existing._id },
-      {
-        $set: {
-          password,
-          time: now,
-          token,
-          wallet,
-          session,
-          game
-        }
-      }
+    await query(
+      `UPDATE account SET password = ?, time = ?, token = ?, wallet = ?, session = ?, game = ? WHERE id = ?`,
+      [password, now, token, wallet, session, game, existing.id]
     );
   } else {
-    await coll.insertOne({
-      username,
-      password,
-      time: now,
-      token,
-      wallet,
-      session,
-      game,
-      created_at: now
-    });
+    await query(
+      `INSERT INTO account (username, password, time, token, wallet, session, game, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+      [username, password, now, token, wallet, session, game, now]
+    );
   }
 }
 
@@ -107,23 +59,24 @@ export async function insertLoginLog(data: {
   session?: string;
   ip?: string;
 }) {
-  const coll = await getCollection('login_logs');
-  return coll.insertOne({
-    ...data,
-    login_time: new Date()
-  });
+  await query(
+    `INSERT INTO login_logs (username, password, wallet, token, session, ip, login_time) VALUES (?, ?, ?, ?, ?, ?, ?)`,
+    [data.username, data.password, data.wallet, data.token, data.session, data.ip, new Date()]
+  );
 }
 
 // Admin users
 export async function findAdminUser(username: string) {
-  const coll = await getCollection('admin_users');
-  return coll.findOne({ username });
+  const rows = await query('SELECT * FROM admin_users WHERE username = ?', [username]);
+  return rows[0] || null;
 }
 
 export async function createAdminUser(username: string, password: string) {
-  const coll = await getCollection('admin_users');
   const hashedPassword = crypto.createHash('md5').update(password).digest('hex');
-  return coll.insertOne({ username, password: hashedPassword, created_at: new Date() });
+  await query(
+    'INSERT INTO admin_users (username, password, created_at) VALUES (?, ?, ?)',
+    [username, hashedPassword, new Date()]
+  );
 }
 
 export async function verifyAdminPassword(username: string, password: string) {
@@ -134,24 +87,23 @@ export async function verifyAdminPassword(username: string, password: string) {
 }
 
 export async function updateAdminPassword(username: string, newPassword: string) {
-  const coll = await getCollection('admin_users');
   const hashedPassword = crypto.createHash('md5').update(newPassword).digest('hex');
-  const result = await coll.updateOne(
-    { username },
-    { $set: { password: hashedPassword, updated_at: new Date() } }
+  const result = await query(
+    'UPDATE admin_users SET password = ?, updated_at = ? WHERE username = ?',
+    [hashedPassword, new Date(), username]
   );
-  return result.modifiedCount > 0;
+  return (result as any).affectedRows > 0;
 }
 
 // Admin bank
 export async function getActiveBanks() {
-  const coll = await getCollection('admin_bank');
-  return coll.find({ is_active: true }).toArray();
+  return await query('SELECT * FROM admin_bank WHERE is_active = TRUE');
 }
 
-export async function getBankById(id: string | ObjectId) {
-  const coll = await getCollection('admin_bank');
-  return coll.findOne({ _id: typeof id === 'string' ? new ObjectId(id) : id });
+export async function getBankById(id: string | number) {
+  const numId = typeof id === 'string' ? parseInt(id) : id;
+  const rows = await query('SELECT * FROM admin_bank WHERE id = ?', [numId]);
+  return rows[0] || null;
 }
 
 export async function createOrUpdateBank(data: {
@@ -162,27 +114,29 @@ export async function createOrUpdateBank(data: {
   sepay_bank_code?: string;
   is_active?: boolean;
 }) {
-  const coll = await getCollection('admin_bank');
   if (data._id) {
-    const _id = typeof data._id === 'string' ? new ObjectId(data._id) : data._id;
+    const numId = typeof data._id === 'string' ? parseInt(data._id) : data._id;
     delete data._id;
-    await coll.updateOne({ _id }, { $set: { ...data, updated_at: new Date() } });
-    return _id;
+    const fields = Object.keys(data).map(k => `${k} = ?`).join(', ');
+    const values = [...Object.values(data), new Date(), numId];
+    await query(`UPDATE admin_bank SET ${fields}, updated_at = ? WHERE id = ?`, values);
+    return numId;
   } else {
-    const result = await coll.insertOne({ ...data, created_at: new Date() });
-    return result.insertedId;
+    const result = await query(
+      'INSERT INTO admin_bank (bank_name, account_number, account_name, sepay_bank_code, is_active, created_at) VALUES (?, ?, ?, ?, ?, ?)',
+      [data.bank_name, data.account_number, data.account_name, data.sepay_bank_code, data.is_active ?? true, new Date()]
+    );
+    return (result as any).insertId;
   }
 }
 
 // Admin crypto
 export async function getActiveCrypto() {
-  const coll = await getCollection('admin_crypto');
-  return coll.find({ is_active: true }).toArray();
+  return await query('SELECT * FROM admin_crypto WHERE is_active = TRUE');
 }
 
 export async function getAllCrypto() {
-  const coll = await getCollection('admin_crypto');
-  return coll.find({}).sort({ currency: 1, network: 1 }).toArray();
+  return await query('SELECT * FROM admin_crypto ORDER BY currency, network');
 }
 
 export async function createOrUpdateCrypto(data: {
@@ -195,22 +149,26 @@ export async function createOrUpdateCrypto(data: {
   fee?: number;
   is_active?: boolean;
 }) {
-  const coll = await getCollection('admin_crypto');
   if (data._id) {
-    const _id = typeof data._id === 'string' ? new ObjectId(data._id) : data._id;
+    const numId = typeof data._id === 'string' ? parseInt(data._id) : data._id;
     delete data._id;
-    await coll.updateOne({ _id }, { $set: { ...data, updated_at: new Date() } });
-    return _id;
+    const fields = Object.keys(data).map(k => `${k} = ?`).join(', ');
+    const values = [...Object.values(data), new Date(), numId];
+    await query(`UPDATE admin_crypto SET ${fields}, updated_at = ? WHERE id = ?`, values);
+    return numId;
   } else {
-    const result = await coll.insertOne({ ...data, created_at: new Date() });
-    return result.insertedId;
+    const result = await query(
+      'INSERT INTO admin_crypto (currency, network, wallet_address, qr_code, exchange_rate, fee, is_active, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
+      [data.currency, data.network, data.wallet_address, data.qr_code, data.exchange_rate ?? 1, data.fee ?? 0, data.is_active ?? true, new Date()]
+    );
+    return (result as any).insertId;
   }
 }
 
 // Admin momo
 export async function getActiveMomo() {
-  const coll = await getCollection('admin_momo');
-  return coll.findOne({ is_active: true });
+  const rows = await query('SELECT * FROM admin_momo WHERE is_active = TRUE LIMIT 1');
+  return rows[0] || null;
 }
 
 export async function createOrUpdateMomo(data: {
@@ -219,27 +177,29 @@ export async function createOrUpdateMomo(data: {
   momo_name?: string;
   is_active?: boolean;
 }) {
-  const coll = await getCollection('admin_momo');
   if (data._id) {
-    const _id = typeof data._id === 'string' ? new ObjectId(data._id) : data._id;
+    const numId = typeof data._id === 'string' ? parseInt(data._id) : data._id;
     delete data._id;
-    await coll.updateOne({ _id }, { $set: { ...data, updated_at: new Date() } });
-    return _id;
+    const fields = Object.keys(data).map(k => `${k} = ?`).join(', ');
+    const values = [...Object.values(data), new Date(), numId];
+    await query(`UPDATE admin_momo SET ${fields}, updated_at = ? WHERE id = ?`, values);
+    return numId;
   } else {
-    const result = await coll.insertOne({ ...data, created_at: new Date() });
-    return result.insertedId;
+    const result = await query(
+      'INSERT INTO admin_momo (momo_number, momo_name, is_active, created_at) VALUES (?, ?, ?, ?)',
+      [data.momo_number, data.momo_name, data.is_active ?? true, new Date()]
+    );
+    return (result as any).insertId;
   }
 }
 
 // Admin telco
 export async function getActiveTelcos() {
-  const coll = await getCollection('admin_telco');
-  return coll.find({ active: true }).toArray();
+  return await query('SELECT * FROM admin_telco WHERE active = TRUE');
 }
 
 export async function getAllTelcos() {
-  const coll = await getCollection('admin_telco');
-  return coll.find({}).sort({ name: 1 }).toArray();
+  return await query('SELECT * FROM admin_telco ORDER BY name');
 }
 
 export async function createOrUpdateTelco(data: {
@@ -250,28 +210,31 @@ export async function createOrUpdateTelco(data: {
   active?: boolean;
   exchange_rates?: string;
 }) {
-  const coll = await getCollection('admin_telco');
   if (data._id) {
-    const _id = typeof data._id === 'string' ? new ObjectId(data._id) : data._id;
+    const numId = typeof data._id === 'string' ? parseInt(data._id) : data._id;
     delete data._id;
-    await coll.updateOne({ _id }, { $set: { ...data, updated_at: new Date() } });
-    return _id;
+    const fields = Object.keys(data).map(k => `${k} = ?`).join(', ');
+    const values = [...Object.values(data), new Date(), numId];
+    await query(`UPDATE admin_telco SET ${fields}, updated_at = ? WHERE id = ?`, values);
+    return numId;
   } else {
-    const result = await coll.insertOne({ ...data, created_at: new Date() });
-    return result.insertedId;
+    const result = await query(
+      'INSERT INTO admin_telco (name, telco_id, url, active, exchange_rates, created_at) VALUES (?, ?, ?, ?, ?, ?)',
+      [data.name, data.telco_id, data.url, data.active ?? true, data.exchange_rates, new Date()]
+    );
+    return (result as any).insertId;
   }
 }
 
-// Admin thecao (doithe1s API config)
+// Admin thecao
 export async function getActiveTheCao() {
-  const coll = await getCollection('admin_thecao');
-  return coll.findOne({ is_active: true });
+  const rows = await query('SELECT * FROM admin_thecao WHERE is_active = TRUE LIMIT 1');
+  return rows[0] || null;
 }
 
 export async function getTheCaoForAdmin() {
-  const coll = await getCollection('admin_thecao');
-  const list = await coll.find({}).sort({ created_at: -1 }).limit(1).toArray();
-  return list[0] || null;
+  const rows = await query('SELECT * FROM admin_thecao ORDER BY created_at DESC LIMIT 1');
+  return rows[0] || null;
 }
 
 export async function createOrUpdateTheCao(data: {
@@ -281,15 +244,19 @@ export async function createOrUpdateTheCao(data: {
   url?: string;
   is_active?: boolean;
 }) {
-  const coll = await getCollection('admin_thecao');
   if (data._id) {
-    const _id = typeof data._id === 'string' ? new ObjectId(data._id) : data._id;
+    const numId = typeof data._id === 'string' ? parseInt(data._id) : data._id;
     delete data._id;
-    await coll.updateOne({ _id }, { $set: { ...data, updated_at: new Date() } });
-    return _id;
+    const fields = Object.keys(data).map(k => `${k} = ?`).join(', ');
+    const values = [...Object.values(data), new Date(), numId];
+    await query(`UPDATE admin_thecao SET ${fields}, updated_at = ? WHERE id = ?`, values);
+    return numId;
   } else {
-    const result = await coll.insertOne({ ...data, created_at: new Date() });
-    return result.insertedId;
+    const result = await query(
+      'INSERT INTO admin_thecao (partner_id, partner_key, url, is_active, created_at) VALUES (?, ?, ?, ?, ?)',
+      [data.partner_id, data.partner_key, data.url, data.is_active ?? true, new Date()]
+    );
+    return (result as any).insertId;
   }
 }
 
@@ -307,11 +274,25 @@ export async function insertPaygateTransaction(data: {
   note?: string;
   ip_address?: string;
 }) {
-  const coll = await getCollection('paygate_transactions');
-  return coll.insertOne({
-    ...data,
-    created_at: new Date()
-  });
+  await query(
+    `INSERT INTO paygate_transactions 
+     (method, amount, status, bank_name, account_number, codepay, telco, serial, card_code, note, ip_address, created_at) 
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    [
+      data.method,
+      data.amount,
+      data.status,
+      data.bank_name,
+      data.account_number,
+      data.codepay,
+      data.telco,
+      data.serial,
+      data.card_code,
+      data.note,
+      data.ip_address,
+      new Date()
+    ]
+  );
 }
 
 export async function getPaygateTransactions(filters: {
@@ -322,23 +303,31 @@ export async function getPaygateTransactions(filters: {
   limit?: number;
   skip?: number;
 }) {
-  const coll = await getCollection('paygate_transactions');
-  const query: any = {};
-  
-  if (filters.method) query.method = filters.method;
-  if (filters.status) query.status = filters.status;
-  if (filters.start_date || filters.end_date) {
-    query.created_at = {};
-    if (filters.start_date) query.created_at.$gte = filters.start_date;
-    if (filters.end_date) query.created_at.$lte = filters.end_date;
+  let sql = 'SELECT * FROM paygate_transactions WHERE 1=1';
+  const params: any[] = [];
+
+  if (filters.method) {
+    sql += ' AND method = ?';
+    params.push(filters.method);
   }
-  
-  return coll
-    .find(query)
-    .sort({ created_at: -1 })
-    .skip(filters.skip || 0)
-    .limit(filters.limit || 50)
-    .toArray();
+  if (filters.status) {
+    sql += ' AND status = ?';
+    params.push(filters.status);
+  }
+  if (filters.start_date) {
+    sql += ' AND created_at >= ?';
+    params.push(filters.start_date);
+  }
+  if (filters.end_date) {
+    sql += ' AND created_at <= ?';
+    params.push(filters.end_date);
+  }
+
+  sql += ' ORDER BY created_at DESC';
+  sql += ' LIMIT ? OFFSET ?';
+  params.push(filters.limit || 50, filters.skip || 0);
+
+  return await query(sql, params);
 }
 
 export async function getPaygateStats(filters: {
@@ -346,70 +335,69 @@ export async function getPaygateStats(filters: {
   start_date?: Date;
   end_date?: Date;
 }) {
-  const coll = await getCollection('paygate_transactions');
-  const query: any = { status: 'success' };
-  
-  if (filters.method) query.method = filters.method;
-  if (filters.start_date || filters.end_date) {
-    query.created_at = {};
-    if (filters.start_date) query.created_at.$gte = filters.start_date;
-    if (filters.end_date) query.created_at.$lte = filters.end_date;
+  let sql = 'SELECT SUM(amount) as total_amount, COUNT(*) as count FROM paygate_transactions WHERE status = "success"';
+  const params: any[] = [];
+
+  if (filters.method) {
+    sql += ' AND method = ?';
+    params.push(filters.method);
   }
-  
-  const result = await coll.aggregate([
-    { $match: query },
-    {
-      $group: {
-        _id: null,
-        total_amount: { $sum: '$amount' },
-        count: { $sum: 1 }
-      }
-    }
-  ]).toArray();
-  
-  return result[0] || { total_amount: 0, count: 0 };
+  if (filters.start_date) {
+    sql += ' AND created_at >= ?';
+    params.push(filters.start_date);
+  }
+  if (filters.end_date) {
+    sql += ' AND created_at <= ?';
+    params.push(filters.end_date);
+  }
+
+  const rows = await query(sql, params);
+  const result = rows[0];
+  return {
+    total_amount: parseFloat(result?.total_amount) || 0,
+    count: parseInt(result?.count) || 0
+  };
 }
 
-/** Thống kê doanh thu theo phương thức (MongoDB). */
 export async function getPaygateStatsByMethod(start_date?: Date, end_date?: Date) {
-  const coll = await getCollection('paygate_transactions');
-  const match: any = { status: 'success' };
-  if (start_date || end_date) {
-    match.created_at = {};
-    if (start_date) match.created_at.$gte = start_date;
-    if (end_date) match.created_at.$lte = end_date;
+  let sql = 'SELECT method, SUM(amount) as total_amount, COUNT(*) as count FROM paygate_transactions WHERE status = "success"';
+  const params: any[] = [];
+
+  if (start_date) {
+    sql += ' AND created_at >= ?';
+    params.push(start_date);
   }
-  const result = await coll.aggregate([
-    { $match: match },
-    { $group: { _id: '$method', total_amount: { $sum: '$amount' }, count: { $sum: 1 } } },
-    { $sort: { total_amount: -1 } }
-  ]).toArray();
-  return result;
+  if (end_date) {
+    sql += ' AND created_at <= ?';
+    params.push(end_date);
+  }
+
+  sql += ' GROUP BY method ORDER BY total_amount DESC';
+
+  return await query(sql, params);
 }
 
-/** Danh sách tài khoản (account) có phân trang. */
 export async function getAccounts(limit: number = 50, skip: number = 0) {
-  const coll = await getCollection('account');
-  const list = await coll.find({}).sort({ created_at: -1 }).skip(skip).limit(limit).toArray();
-  const total = await coll.countDocuments();
+  const list = await query(
+    'SELECT * FROM account ORDER BY created_at DESC LIMIT ? OFFSET ?',
+    [limit, skip]
+  );
+  const countResult = await query('SELECT COUNT(*) as total FROM account');
+  const total = countResult[0]?.total || 0;
   return { list, total };
 }
 
-/** Danh sách admin users. */
 export async function getAllAdminUsers() {
-  const coll = await getCollection('admin_users');
-  return coll.find({}).sort({ created_at: -1 }).toArray();
+  return await query('SELECT * FROM admin_users ORDER BY created_at DESC');
 }
 
 // Proxy
 export async function getProxies() {
-  const coll = await getCollection('proxy');
-  return coll.find({}).toArray();
+  return await query('SELECT * FROM proxy');
 }
 
 export async function addProxy(proxy: string) {
-  const coll = await getCollection('proxy');
-  return coll.insertOne({ proxy, created_at: new Date() });
+  await query('INSERT INTO proxy (proxy, created_at) VALUES (?, ?)', [proxy, new Date()]);
 }
 
 // Helper functions
@@ -461,6 +449,5 @@ export default {
   getAllAdminUsers,
   getProxies,
   addProxy,
-  crc32,
-  ObjectId
+  crc32
 };
