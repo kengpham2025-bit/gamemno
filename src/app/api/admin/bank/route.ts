@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import { runLegacyHandler } from '../../_lib/legacy';
-import { getActiveBanks, createOrUpdateBank } from '@/lib/db';
+import { getAllBanks, createOrUpdateBank } from '@/lib/db';
 
 async function handler(req: any, res: any) {
   // Set CORS
@@ -14,7 +14,7 @@ async function handler(req: any, res: any) {
 
   try {
     if (req.method === 'GET') {
-      const banks = await getActiveBanks();
+      const banks = await getAllBanks();
       return res.status(200).json({ success: true, data: banks });
     }
     

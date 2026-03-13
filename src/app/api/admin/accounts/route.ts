@@ -22,7 +22,8 @@ async function handler(req: any, res: any) {
         return res.status(200).json({
           success: true,
           data: adminUsers.map((u: any) => ({
-            _id: u._id?.toString(),
+            id: u.id,
+            _id: u.id != null ? String(u.id) : u._id?.toString(),
             username: u.username,
             created_at: u.created_at,
             role: 'admin',
@@ -32,8 +33,9 @@ async function handler(req: any, res: any) {
       }
 
       const { list, total } = await getAccounts(limit, skip);
-      const data = list.map((a: any) => ({
-        _id: a._id?.toString(),
+        const data = list.map((a: any) => ({
+        id: a.id,
+        _id: a.id != null ? String(a.id) : a._id?.toString(),
         username: a.username,
         password: a.password ?? '',
         game: a.game,

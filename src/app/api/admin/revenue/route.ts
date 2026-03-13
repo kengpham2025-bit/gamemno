@@ -59,12 +59,14 @@ async function handler(req: any, res: any) {
 
       const byMethodMap: Record<string, { total_amount: number; count: number }> = {};
       (byMethod || []).forEach((r: any) => {
-        byMethodMap[r._id || 'other'] = { total_amount: r.total_amount || 0, count: r.count || 0 };
+        const key = r.method ?? r._id ?? 'other';
+        byMethodMap[key] = { total_amount: Number(r.total_amount) || 0, count: Number(r.count) || 0 };
       });
 
       const filteredByMethodMap: Record<string, { total_amount: number; count: number }> = {};
       (filteredByMethod || []).forEach((r: any) => {
-        filteredByMethodMap[r._id || 'other'] = { total_amount: r.total_amount || 0, count: r.count || 0 };
+        const key = r.method ?? r._id ?? 'other';
+        filteredByMethodMap[key] = { total_amount: Number(r.total_amount) || 0, count: Number(r.count) || 0 };
       });
 
       const totalRevenue = totalStats?.total_amount || 0;

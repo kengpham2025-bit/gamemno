@@ -106,6 +106,10 @@ export async function getBankById(id: string | number) {
   return rows[0] || null;
 }
 
+export async function getAllBanks() {
+  return await query('SELECT * FROM admin_bank ORDER BY id DESC');
+}
+
 export async function createOrUpdateBank(data: {
   _id?: string;
   bank_name?: string;
@@ -169,6 +173,10 @@ export async function createOrUpdateCrypto(data: {
 export async function getActiveMomo() {
   const rows = await query('SELECT * FROM admin_momo WHERE is_active = TRUE LIMIT 1');
   return rows[0] || null;
+}
+
+export async function getAllMomo() {
+  return await query('SELECT * FROM admin_momo ORDER BY id DESC');
 }
 
 export async function createOrUpdateMomo(data: {

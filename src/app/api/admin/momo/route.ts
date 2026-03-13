@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import { runLegacyHandler } from '../../_lib/legacy';
-import { getActiveMomo, createOrUpdateMomo } from '@/lib/db';
+import { getAllMomo, createOrUpdateMomo } from '@/lib/db';
 
 async function handler(req: any, res: any) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -13,8 +13,8 @@ async function handler(req: any, res: any) {
 
   try {
     if (req.method === 'GET') {
-      const momo = await getActiveMomo();
-      return res.status(200).json({ success: true, data: momo || {} });
+      const list = await getAllMomo();
+      return res.status(200).json({ success: true, data: Array.isArray(list) ? list : [] });
     }
     
     if (req.method === 'POST') {
