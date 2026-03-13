@@ -1,0 +1,82 @@
+{
+  "importBase": "import",
+  "nativeBase": "native",
+  "name": "lobby-pc",
+  "deps": [],
+  "uuids": [
+    "41l5n9ik1Ck4nPImgr/hsS",
+    "5eRum+A2FKsYu5lxnxB9zR",
+    "84jDx2A0dALqha2KpsGTrM",
+    "adPVDksNlFkokAwZNQPifO",
+    "c9UvO5C0VEhbtl2i4ibPOq",
+    "eaHf/kwzBE8aLfvenRghH8",
+    "09Me37JlNNvabHaGKd1tz3",
+    "41otcfRfdCoogkScU3VP00",
+    "529culCNNJ24DqJlWYC1Rf",
+    "5eRum+A2FKsYu5lxnxB9zR@6c48a",
+    "84jDx2A0dALqha2KpsGTrM@6c48a",
+    "851yp6+6tNNIpI5zIXEMCw",
+    "adPVDksNlFkokAwZNQPifO@6c48a",
+    "0c72c27e6"
+  ],
+  "paths": {
+    "0": ["spines/footer/x_ft_tet_100", 1],
+    "1": ["spines/jackpot/x_jp_tet", 3],
+    "2": ["spines/footer/x_ft_tet_100", 3],
+    "3": ["spines/header/x_hd_tet_100", 3],
+    "4": ["spines/header/x_hd_tet_100", 1],
+    "5": ["spines/jackpot/x_jp_tet", 1],
+    "6": ["spines/footer/x_ft_tet_100", 2],
+    "7": ["icon", 0],
+    "8": ["spines/header/x_hd_tet_100", 2],
+    "9": ["spines/jackpot/x_jp_tet/texture", 4, 1],
+    "10": ["spines/footer/x_ft_tet_100/texture", 4, 1],
+    "11": ["spines/jackpot/x_jp_tet", 2],
+    "12": ["spines/header/x_hd_tet_100/texture", 4, 1]
+  },
+  "scenes": {},
+  "packs": {
+    "0c72c27e6": [
+      "6",
+      "0",
+      "7",
+      "8",
+      "1",
+      "9",
+      "2",
+      "10",
+      "11",
+      "3",
+      "12",
+      "4",
+      "5"
+    ]
+  },
+  "versions": {
+    "import": [13, "df0b9"],
+    "native": [
+      0,
+      "6471f",
+      1,
+      "9e39b",
+      2,
+      "86e7b",
+      3,
+      "e37d8",
+      4,
+      "7b866",
+      5,
+      "8f0aa"
+    ]
+  },
+  "redirect": [],
+  "debug": false,
+  "extensionMap": {},
+  "types": [
+    "cc.Prefab",
+    "cc.Asset",
+    "sp.SkeletonData",
+    "cc.ImageAsset",
+    "cc.Texture2D"
+  ]
+}

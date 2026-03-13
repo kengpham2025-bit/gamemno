@@ -1,0 +1,15 @@
+{
+  "importBase": "import",
+  "nativeBase": "native",
+  "name": "resources",
+  "deps": [],
+  "uuids": ["dcwOibWelAyY1T3Zfi86ub"],
+  "paths": { "0": ["cacert", 0] },
+  "scenes": {},
+  "packs": {},
+  "versions": { "import": [0, "95f83"], "native": [0, "2c435"] },
+  "redirect": [],
+  "debug": false,
+  "extensionMap": {},
+  "types": ["cc.Asset"]
+}

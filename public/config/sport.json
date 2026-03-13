@@ -1,0 +1,18 @@
+{
+  "domains": {
+    "urlHomeExposeService": "https://demo7892.fun/sport/",
+    "urlHomeBettingService": "https://demo7892.fun/sport/",
+    "urlHomeOAuthService": "https://demo7892.fun/sport/",
+    "urlHomeWebsocket": "wss://demo7892.fun/sport/",
+    "urlVideoJS": "http://vui.sb21.net",
+    "urlVirtualVideoJS": "http://vuivita.sb21.net",
+    "urlStatistics": "https://det.zenandfe.com"
+  },
+  "updateBalance": {
+    "timeRefeshBalance": 985,
+    "refeshWithAPI": true
+  },
+  "performance": {
+    "sizeMem": 10
+  }
+}

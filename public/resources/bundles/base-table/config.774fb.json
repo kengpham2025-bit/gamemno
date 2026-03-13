@@ -1,0 +1,26 @@
+{
+  "importBase": "import",
+  "nativeBase": "native",
+  "name": "base-table",
+  "deps": [],
+  "uuids": [
+    "158acf373",
+    "72t8GEQNhIx6G8kQFKtpj7@f9941",
+    "b2n7wz94pHGpgqq9clbApi@f9941",
+    "fcWvsYlL1LE7OxrLT+/w6U@f9941",
+    "0b6c0fc2a",
+    "158acf373@6c48a"
+  ],
+  "paths": {
+    "1": ["sprites/ig_bc_dia/spriteFrame", 0, 1],
+    "2": ["sprites/ig_chip_stand/spriteFrame", 0, 1],
+    "3": ["sprites/ig_dealer/spriteFrame", 0, 1]
+  },
+  "scenes": {},
+  "packs": { "0b6c0fc2a": ["0", "5", "1", "2", "3"] },
+  "versions": { "import": [4, "699fd"], "native": [0, "6eb21"] },
+  "redirect": [],
+  "debug": false,
+  "extensionMap": {},
+  "types": ["cc.SpriteFrame"]
+}

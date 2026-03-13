@@ -1,0 +1,25 @@
+{
+  "importBase": "import",
+  "nativeBase": "native",
+  "name": "mini",
+  "deps": ["base"],
+  "uuids": [
+    "7bESbOW+NNHKL43ILbSbWi",
+    "e1K+oo9KlNm5Dm6p2vxhU1",
+    "010e50c03",
+    "3escRCd0RA1L544WEE8MHj@f9941",
+    "5erEIM51pOr4ZbxTPIRSQY@f9941",
+    "87PAiVk+tIG6Cu5JzdHL39@f9941",
+    "c3VQfEAq9HNZ7k4yzIG7+X",
+    "e8ay3we7tJz7mQfNGwKwJP",
+    "f5mxRIi4dB94sB1ytqqMx3@f9941"
+  ],
+  "paths": { "0": ["mini_root", 0], "1": ["prefabs/mini_closed", 0] },
+  "scenes": {},
+  "packs": { "010e50c03": ["0", "1"] },
+  "versions": { "import": [2, "f6e6a"], "native": [] },
+  "redirect": [3, "0", 4, "0", 5, "0", 6, "0", 7, "0", 8, "0"],
+  "debug": false,
+  "extensionMap": {},
+  "types": ["cc.Prefab"]
+}

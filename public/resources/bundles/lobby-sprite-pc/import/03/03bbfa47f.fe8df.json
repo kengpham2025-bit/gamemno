@@ -1,0 +1,268 @@
+[
+  1,
+  [
+    "11a123766@6c48a",
+    "41oqREW+lLQ4AXMvt9GB1y@f9941",
+    "15ZTi3S9tPPKYeRXO6939e@f9941",
+    "df331N209Iq6DErQi0MqP6@f9941",
+    "6eylMt001CVY8wnyyJhLxf@f9941",
+    "32prleIdNANpmLs4CYJG1Y@f9941",
+    "b1XDUEFiVJsJcp+CATiLHq@f9941",
+    "7eP08mGfBENa1CSF6WBfzA@f9941",
+    "21wsOGO3hPjJZg6WfX8H8+@f9941",
+    "04Z3Tm6uhHsa7wZ09frmT/@f9941"
+  ],
+  ["_textureSource", "spriteFrame", "root", "node", "data"],
+  [
+    "cc.SpriteFrame",
+    "cc.ImageAsset",
+    "cc.Texture2D",
+    ["cc.Prefab", ["_name"], 2],
+    ["cc.Node", ["_name", "_components", "_prefab"], 2, 9, 4],
+    [
+      "d9409QCrFlKwqd6cpDpuZP1",
+      ["node", "__prefab", "gameIDSpriteFramePairs"],
+      3,
+      1,
+      4,
+      9
+    ],
+    ["cc.CompPrefabInfo", ["fileId"], 2],
+    ["GameIDSpriteFramePair", ["gameID", "scale", "spriteFrame"], 1, 6],
+    ["cc.PrefabInfo", ["fileId", "root", "asset"], 2, 1, 1]
+  ],
+  [
+    [7, 0, 1, 2, 3],
+    [3, 0, 2],
+    [4, 0, 1, 2, 2],
+    [5, 0, 1, 2, 1],
+    [6, 0, 2],
+    [8, 0, 1, 2, 2]
+  ],
+  [
+    [
+      [
+        {
+          "name": "logo_s_sport",
+          "rect": { "x": 3, "y": 193, "width": 223, "height": 184 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 223, "height": 184 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [[{ "fmt": "0", "w": 230, "h": 1710 }, -1], [1], 0, [], [], []],
+    [[{ "base": "2,2,0,0,0,0", "mipmaps": ["11a123766"] }], [2], 0, [], [], []],
+    [
+      [
+        {
+          "name": "logo_2",
+          "rect": { "x": 3, "y": 383, "width": 223, "height": 184 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 223, "height": 184 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "logo_a_sport",
+          "rect": { "x": 3, "y": 573, "width": 223, "height": 184 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 223, "height": 184 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "logo_6",
+          "rect": { "x": 3, "y": 763, "width": 223, "height": 184 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 223, "height": 184 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "logo_1",
+          "rect": { "x": 3, "y": 953, "width": 223, "height": 184 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 223, "height": 184 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "logo_5",
+          "rect": { "x": 3, "y": 1143, "width": 223, "height": 184 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 223, "height": 184 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "logo_8",
+          "rect": { "x": 3, "y": 3, "width": 224, "height": 184 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 224, "height": 184 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "logo_7",
+          "rect": { "x": 3, "y": 1333, "width": 223, "height": 184 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 223, "height": 184 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        [1, "icon"],
+        [
+          2,
+          "icon",
+          [
+            [
+              3,
+              -2,
+              [4, "50/qNtK69P+75v7D0Y6ZBM"],
+              [
+                [0, 1, 0.84, 0],
+                [0, 2, 0.84, 1],
+                [0, 4, 0.84, 2],
+                [0, 5, 0.84, 3],
+                [0, 6, 0.84, 4],
+                [0, 7, 0.84, 5],
+                [0, 8, 0.84, 6],
+                [0, 1002, 0.84, 7],
+                [0, 1001, 0.84, 8]
+              ]
+            ]
+          ],
+          [5, "c46/YsCPVOJYA4mWEpNYRx", -1, 0]
+        ]
+      ],
+      0,
+      [0, 2, 1, 0, 3, 1, 0, 4, 1, 2],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [1, 1, 1, 1, 1, 1, 1, 1, 1],
+      [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    ],
+    [
+      [
+        {
+          "name": "logo_3",
+          "rect": { "x": 3, "y": 1523, "width": 223, "height": 184 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 223, "height": 184 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ]
+  ]
+]

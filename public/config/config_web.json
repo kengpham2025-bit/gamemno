@@ -1,0 +1,191 @@
+{
+  "host_domain": "https://demo7892.fun/",
+  "api_domain": "https://demo7892.fun/",
+  "tracking_url": "https://demo7892.fun/et/v1/event-tracking",
+  "iFrame_domain": "/",
+  "lp_domain_origin": "/",
+  "lp_domain": "789Club",
+  "rs_domain": "./resources/",
+  "rs_static_domain": "./resources/static/",
+  "jackpots_url": "https://demo7892.fun/gameapi/public/jackpot/all",
+  "sport_domain": "https://demo7892.fun/sport",
+  "ws_sport_domain": "wss://demo7892.fun/sport",
+  "top_sport_domain": "https://api100.atpman.net/gameapi/public/sb/ranking",
+  "bc_livestream_domain": "https://demo7892.fun/xocdialive/api/v1/",
+  "bc_livestream_ws_url": "wss://demo7892.fun/",
+  "bc_livestream_ws_url_new": "wss://demo7892.fun/xocdialive",
+  "xd_livestream_domain": "https://demo7892.fun/xocdialive/api/v1/",
+  "xd_livestream_ws_url": "ws://socket-bc-789.gameland.vip/",
+  "xd_livestream_ws_url_new": "wss://demo7892.fun/xocdialive",
+  "xd_livestream_video_url": "/internal/livestream_page/xocdialive_789_withautoplay_03w.html",
+  "tx_livestream_ws_url": "wss://demo7892.fun/taixiulive",
+  "tx_livestream_video_url": "/internal/livestream_page/taixiulive_789_withautoplay_03w.html",
+  "livestreamConfig": {
+    "xd_live_video_url": "/internal/livestream_page/taixiulive_789_withautoplay_03w.html",
+    "tx_live_video_url": "/internal/livestream_page/xocdialive_789_withautoplay_03w.html"
+  },
+  "loginConfig": {
+    "authorizationEndpoint": "/auth/authorize",
+    "tokenEndpoint": "/id",
+    "clientId": "789.club"
+  },
+  "ncc_games": "internal/livestream_page/ncc_games_fullscreen.html",
+  "appName": "789club",
+  "brand": "789.club",
+  "files_config": {
+    "prefab_baucua": {
+      "totalTextFileCount": 250,
+      "totalTextImageCount": 23
+    },
+    "prefab_xocdia": {
+      "totalTextFileCount": 201,
+      "totalTextImageCount": 18
+    },
+    "prefab_xocdia_squidgame": {
+      "totalTextFileCount": 274,
+      "totalTextImageCount": 27
+    },
+    "prefab_tlmn": {
+      "totalTextFileCount": 215,
+      "totalTextImageCount": 11
+    },
+    "prefab_sam": {
+      "totalTextFileCount": 200,
+      "totalTextImageCount": 12
+    },
+    "binh": {
+      "totalTextFileCount": 679,
+      "totalTextImageCount": 206
+    },
+    "phom": {
+      "totalTextFileCount": 658,
+      "totalTextImageCount": 204
+    },
+    "lieng": {
+      "totalTextFileCount": 699,
+      "totalTextImageCount": 214
+    },
+    "poker": {
+      "totalTextFileCount": 679,
+      "totalTextImageCount": 210
+    },
+    "xito": {
+      "totalTextFileCount": 682,
+      "totalTextImageCount": 211
+    },
+    "g9937L": {
+      "totalTextFileCount": 734,
+      "totalTextImageCount": 95
+    },
+    "g9976L": {
+      "totalTextFileCount": 1103,
+      "totalTextImageCount": 310
+    },
+    "R3986L": {
+      "totalTextFileCount": 1060,
+      "totalTextImageCount": 190
+    },
+    "g9938L": {
+      "totalTextFileCount": 1260,
+      "totalTextImageCount": 376
+    },
+    "ktfAllInOne1998": {
+      "totalTextFileCount": 1043,
+      "totalTextImageCount": 107
+    },
+    "g9930L": {
+      "totalTextFileCount": 1894,
+      "totalTextImageCount": 529
+    },
+    "bc_live": {
+      "totalTextFileCount": 351,
+      "totalTextImageCount": 35
+    },
+    "xd_live": {
+      "totalTextFileCount": 392,
+      "totalTextImageCount": 66
+    },
+    "tx_live": {
+      "totalTextFileCount": 374,
+      "totalTextImageCount": 25
+    }
+  },
+  "bundles": {
+    "lobby": {
+      "totalTextFileCount": 1632,
+      "totalTextImageCount": 132
+    },
+    "miteks-games": {
+      "totalTextFileCount": 1103,
+      "totalTextImageCount": 310
+    },
+    "lode": {
+      "totalTextFileCount": 310,
+      "totalTextImageCount": 56
+    },
+    "slot_naruto": {
+      "totalTextFileCount": 310,
+      "totalTextImageCount": 56
+    },
+    "slot_pvz": {
+      "totalTextFileCount": 695,
+      "totalTextImageCount": 139
+    },
+    "slot_angrybird": {
+      "totalTextFileCount": 423,
+      "totalTextImageCount": 57
+    },
+    "slot_dc": {
+      "totalTextFileCount": 318,
+      "totalTextImageCount": 55
+    },
+    "table-game": {
+      "totalTextFileCount": 251,
+      "totalTextImageCount": 23
+    },
+    "slot_mnpk": {
+      "totalTextFileCount": 298,
+      "totalTextImageCount": 6
+    },
+    "slot_man": {
+      "totalTextFileCount": 223,
+      "totalTextImageCount": 13
+    },
+    "tlmn_sam_poker": {
+      "totalTextFileCount": 680,
+      "totalTextImageCount": 219
+    },
+    "lodesieutoc": {
+      "totalTextFileCount": 259,
+      "totalTextImageCount": 27
+    },
+    "livecasino": {
+      "totalTextFileCount": 33,
+      "totalTextImageCount": 12
+    },
+    "ca": {
+      "totalTextFileCount": 1378,
+      "totalTextImageCount": 148
+    },
+    "baucualivestream": {
+      "totalTextFileCount": 1378,
+      "totalTextImageCount": 148
+    },
+    "dragonball": {
+      "totalTextFileCount": 247,
+      "totalTextImageCount": 6
+    },
+    "slot_event_tet": {
+      "totalTextFileCount": 83,
+      "totalTextImageCount": 6
+    },
+    "trenduoi": {
+      "totalTextFileCount": 325,
+      "totalTextImageCount": 32
+    },
+    "rongho": {
+      "totalTextFileCount": 271,
+      "totalTextImageCount": 60
+    }
+  }
+}

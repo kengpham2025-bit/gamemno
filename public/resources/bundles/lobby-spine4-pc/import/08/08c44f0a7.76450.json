@@ -1,0 +1,196 @@
+[
+  1,
+  [
+    "99T/0TQ8JApISh+LvBfKsl@6c48a",
+    "86zdOLc0FCXKeMplCfJanA@6c48a",
+    "f6mSEaDjRJfKYxIUAxc0Tr",
+    "12vGXu8k5N5p55C3ilTYFd",
+    "c0OyjLObBL34KZrwB60nGY",
+    "2aK4Tt2MZCELtczjpw6qJy",
+    "71GXJd1atE6px9LrepzXZl@6c48a",
+    "65q603Yl5AoZZmb3//TESz@6c48a"
+  ],
+  ["skeletonData", "node", "root", "data"],
+  [
+    "cc.ImageAsset",
+    "cc.Texture2D",
+    [
+      "sp.SkeletonData",
+      ["_name", "_native", "_atlasText", "textureNames", "textures"],
+      -1,
+      3
+    ],
+    ["cc.Asset", ["_name", "_native"], 1],
+    ["cc.Prefab", ["_name"], 2],
+    ["cc.Node", ["_name", "_layer", "_components", "_prefab"], 1, 9, 4],
+    ["cc.UITransform", ["node", "__prefab"], 3, 1, 4],
+    ["cc.CompPrefabInfo", ["fileId"], 2],
+    [
+      "d9409QCrFlKwqd6cpDpuZP1",
+      ["node", "__prefab", "gameIDSkeletonDataPairs"],
+      3,
+      1,
+      4,
+      9
+    ],
+    ["GameIDSkeletonDataPair", ["gameID", "spineData"], 2, 4],
+    ["SpineIconData", ["scale", "skeletonData"], 2, 6],
+    ["cc.PrefabInfo", ["fileId", "root", "asset"], 2, 1, 1]
+  ],
+  [
+    [2, 0, 1, 2, 3, 4, 5],
+    [3, 0, 1, 3],
+    [9, 0, 1, 2],
+    [10, 0, 1, 2],
+    [7, 0, 2],
+    [4, 0, 2],
+    [5, 0, 1, 2, 3, 3],
+    [6, 0, 1, 1],
+    [8, 0, 1, 2, 1],
+    [11, 0, 1, 2, 2]
+  ],
+  [
+    [
+      [
+        [
+          0,
+          "Via_Casino",
+          ".bin",
+          "\nVia_Casino.png\nsize: 2048,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nAura1\n  rotate: false\n  xy: 445, 95\n  size: 163, 159\n  orig: 168, 168\n  offset: 3, 5\n  index: -1\nCard 5\n  rotate: false\n  xy: 832, 49\n  size: 38, 31\n  orig: 40, 33\n  offset: 1, 1\n  index: -1\nCard_4\n  rotate: false\n  xy: 481, 3\n  size: 28, 23\n  orig: 30, 25\n  offset: 1, 1\n  index: -1\nCoin_1\n  rotate: false\n  xy: 254, 4\n  size: 16, 17\n  orig: 18, 19\n  offset: 1, 1\n  index: -1\nCoin_2\n  rotate: false\n  xy: 288, 5\n  size: 19, 16\n  orig: 21, 18\n  offset: 1, 1\n  index: -1\nCoin_3\n  rotate: false\n  xy: 126, 2\n  size: 17, 13\n  orig: 19, 15\n  offset: 1, 1\n  index: -1\nCoin_4\n  rotate: false\n  xy: 145, 3\n  size: 9, 12\n  orig: 11, 14\n  offset: 1, 1\n  index: -1\nDice_1\n  rotate: false\n  xy: 917, 60\n  size: 28, 26\n  orig: 30, 28\n  offset: 1, 1\n  index: -1\nDice_2\n  rotate: false\n  xy: 487, 29\n  size: 25, 22\n  orig: 27, 24\n  offset: 1, 1\n  index: -1\nDice_3\n  rotate: false\n  xy: 832, 82\n  size: 19, 32\n  orig: 21, 34\n  offset: 1, 1\n  index: -1\nLayer 3\n  rotate: false\n  xy: 126, 17\n  size: 39, 53\n  orig: 41, 55\n  offset: 1, 1\n  index: -1\nLayer 4\n  rotate: false\n  xy: 58, 6\n  size: 66, 64\n  orig: 68, 66\n  offset: 1, 1\n  index: -1\nLight_2\n  rotate: false\n  xy: 648, 12\n  size: 182, 94\n  orig: 185, 100\n  offset: 1, 1\n  index: -1\nLive\n  rotate: false\n  xy: 555, 18\n  size: 91, 33\n  orig: 91, 33\n  offset: 0, 0\n  index: -1\nLive_text\n  rotate: false\n  xy: 205, 4\n  size: 47, 17\n  orig: 47, 17\n  offset: 0, 0\n  index: -1\nR_34\n  rotate: false\n  xy: 978, 123\n  size: 198, 131\n  orig: 256, 168\n  offset: 31, 18\n  index: -1\nVIA\n  rotate: false\n  xy: 205, 23\n  size: 110, 47\n  orig: 110, 47\n  offset: 0, 0\n  index: -1\nVIA2\n  rotate: false\n  xy: 317, 25\n  size: 110, 47\n  orig: 110, 47\n  offset: 0, 0\n  index: -1\nbg\n  rotate: false\n  xy: 225, 74\n  size: 218, 180\n  orig: 220, 182\n  offset: 1, 1\n  index: -1\nborder_s\n  rotate: false\n  xy: 2, 72\n  size: 221, 182\n  orig: 223, 184\n  offset: 1, 1\n  index: -1\ncard_1\n  rotate: false\n  xy: 2, 5\n  size: 54, 65\n  orig: 57, 67\n  offset: 1, 1\n  index: -1\ncard_2\n  rotate: false\n  xy: 167, 19\n  size: 36, 51\n  orig: 38, 53\n  offset: 1, 1\n  index: -1\ncasino\n  rotate: false\n  xy: 853, 88\n  size: 120, 26\n  orig: 122, 28\n  offset: 1, 1\n  index: -1\ncasino2\n  rotate: false\n  xy: 832, 21\n  size: 120, 26\n  orig: 122, 28\n  offset: 1, 1\n  index: -1\nf1\n  rotate: false\n  xy: 872, 60\n  size: 43, 26\n  orig: 55, 40\n  offset: 6, 7\n  index: -1\nf4\n  rotate: false\n  xy: 487, 53\n  size: 73, 40\n  orig: 81, 50\n  offset: 4, 5\n  index: -1\nflare\n  rotate: false\n  xy: 1119, 6\n  size: 228, 115\n  orig: 240, 133\n  offset: 6, 10\n  index: -1\nfx\n  rotate: false\n  xy: 326, 3\n  size: 153, 20\n  orig: 155, 25\n  offset: 1, 2\n  index: -1\nig_coating_1\n  rotate: false\n  xy: 758, 116\n  size: 218, 138\n  orig: 220, 182\n  offset: 1, 1\n  index: -1\nlive_triangle\n  rotate: false\n  xy: 309, 5\n  size: 15, 16\n  orig: 15, 16\n  offset: 0, 0\n  index: -1\nlive_triangle2\n  rotate: false\n  xy: 272, 4\n  size: 14, 17\n  orig: 18, 21\n  offset: 4, 2\n  index: -1\nroulette\n  rotate: false\n  xy: 978, 5\n  size: 139, 116\n  orig: 139, 116\n  offset: 0, 0\n  index: -1\nroulette1\n  rotate: false\n  xy: 429, 28\n  size: 56, 44\n  orig: 56, 44\n  offset: 0, 0\n  index: -1\nroulette1a\n  rotate: false\n  xy: 514, 13\n  size: 39, 38\n  orig: 39, 38\n  offset: 0, 0\n  index: -1\nroulette2\n  rotate: false\n  xy: 610, 108\n  size: 146, 146\n  orig: 146, 146\n  offset: 0, 0\n  index: -1\nvia_logo\n  rotate: false\n  xy: 562, 60\n  size: 67, 33\n  orig: 67, 33\n  offset: 0, 0\n  index: -1\n",
+          ["Via_Casino.png"],
+          [0]
+        ],
+        -1
+      ],
+      0,
+      0,
+      [0],
+      [-1],
+      [0]
+    ],
+    [
+      [
+        [
+          0,
+          "Vivo_Gaming",
+          ".bin",
+          "\nVivo_Gaming.png\nsize: 2048,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\n27\n  rotate: false\n  xy: 658, 25\n  size: 91, 82\n  orig: 138, 125\n  offset: 31, 24\n  index: -1\n31\n  rotate: false\n  xy: 912, 29\n  size: 30, 29\n  orig: 34, 35\n  offset: 2, 3\n  index: -1\nF5\n  rotate: false\n  xy: 171, 2\n  size: 222, 5\n  orig: 222, 5\n  offset: 0, 0\n  index: -1\nLive\n  rotate: false\n  xy: 171, 9\n  size: 91, 33\n  orig: 91, 33\n  offset: 0, 0\n  index: -1\nLive_text\n  rotate: false\n  xy: 621, 2\n  size: 47, 17\n  orig: 47, 17\n  offset: 0, 0\n  index: -1\nR_13\n  rotate: false\n  xy: 657, 109\n  size: 190, 144\n  orig: 250, 149\n  offset: 34, 4\n  index: -1\nbg\n  rotate: false\n  xy: 437, 74\n  size: 218, 179\n  orig: 220, 181\n  offset: 1, 1\n  index: -1\nbich\n  rotate: false\n  xy: 849, 112\n  size: 122, 141\n  orig: 122, 141\n  offset: 0, 0\n  index: -1\nborder_s\n  rotate: false\n  xy: 214, 71\n  size: 221, 182\n  orig: 223, 184\n  offset: 1, 1\n  index: -1\nchip_1\n  rotate: false\n  xy: 369, 23\n  size: 22, 46\n  orig: 24, 48\n  offset: 1, 1\n  index: -1\nchip_2\n  rotate: false\n  xy: 341, 45\n  size: 26, 24\n  orig: 28, 26\n  offset: 1, 1\n  index: -1\nchip_3\n  rotate: false\n  xy: 915, 83\n  size: 39, 27\n  orig: 40, 27\n  offset: 0, 0\n  index: -1\nchuon\n  rotate: false\n  xy: 863, 60\n  size: 50, 50\n  orig: 50, 50\n  offset: 0, 0\n  index: -1\ncircle (11)\n  rotate: false\n  xy: 395, 6\n  size: 112, 63\n  orig: 116, 67\n  offset: 2, 2\n  index: -1\nco\n  rotate: false\n  xy: 863, 12\n  size: 47, 46\n  orig: 47, 47\n  offset: 0, 1\n  index: -1\nef\n  rotate: false\n  xy: 973, 124\n  size: 196, 129\n  orig: 205, 132\n  offset: 4, 1\n  index: -1\ngaming1\n  rotate: false\n  xy: 280, 45\n  size: 29, 24\n  orig: 31, 26\n  offset: 1, 1\n  index: -1\ngaming2\n  rotate: false\n  xy: 214, 45\n  size: 31, 24\n  orig: 33, 26\n  offset: 1, 1\n  index: -1\ngaming3\n  rotate: false\n  xy: 247, 45\n  size: 31, 24\n  orig: 33, 26\n  offset: 1, 1\n  index: -1\ngaming4\n  rotate: false\n  xy: 360, 19\n  size: 6, 24\n  orig: 8, 26\n  offset: 1, 1\n  index: -1\ngaming5\n  rotate: false\n  xy: 912, 3\n  size: 26, 24\n  orig: 29, 26\n  offset: 2, 1\n  index: -1\ngaming6\n  rotate: false\n  xy: 311, 45\n  size: 28, 24\n  orig: 30, 26\n  offset: 1, 1\n  index: -1\ngradient_51\n  rotate: false\n  xy: 2, 44\n  size: 210, 209\n  orig: 217, 213\n  offset: 3, 3\n  index: -1\nig_coating_1\n  rotate: false\n  xy: 509, 19\n  size: 110, 53\n  orig: 111, 58\n  offset: 1, 1\n  index: -1\nig_coating_2\n  rotate: false\n  xy: 751, 16\n  size: 110, 91\n  orig: 110, 91\n  offset: 0, 0\n  index: -1\nlive_triangle\n  rotate: false\n  xy: 343, 27\n  size: 15, 16\n  orig: 15, 16\n  offset: 0, 0\n  index: -1\nlive_triangle2\n  rotate: false\n  xy: 670, 6\n  size: 14, 17\n  orig: 18, 21\n  offset: 4, 2\n  index: -1\nro\n  rotate: false\n  xy: 621, 21\n  size: 35, 51\n  orig: 35, 51\n  offset: 0, 0\n  index: -1\nvivo1\n  rotate: false\n  xy: 2, 2\n  size: 52, 40\n  orig: 54, 42\n  offset: 1, 1\n  index: -1\nvivo2\n  rotate: false\n  xy: 159, 2\n  size: 10, 40\n  orig: 12, 42\n  offset: 1, 1\n  index: -1\nvivo3\n  rotate: false\n  xy: 56, 2\n  size: 52, 40\n  orig: 54, 42\n  offset: 1, 1\n  index: -1\nvivo4\n  rotate: false\n  xy: 110, 2\n  size: 47, 40\n  orig: 49, 42\n  offset: 1, 1\n  index: -1\nvivo_logo\n  rotate: false\n  xy: 264, 13\n  size: 77, 30\n  orig: 77, 30\n  offset: 0, 0\n  index: -1\n",
+          ["Vivo_Gaming.png"],
+          [0]
+        ],
+        -1
+      ],
+      0,
+      0,
+      [0],
+      [-1],
+      [1]
+    ],
+    [[[1, "ic_ngoai_sexygaming", ".atlas"], -1], 0, 0, [], [], []],
+    [[[1, "Via_Casino", ".atlas"], -1], 0, 0, [], [], []],
+    [[{ "fmt": "0", "w": 0, "h": 0 }, -1], [0], 0, [], [], []],
+    [
+      [{ "base": "2,2,0,0,0,0", "mipmaps": ["65q603Yl5AoZZmb3//TESz"] }],
+      [1],
+      0,
+      [],
+      [],
+      []
+    ],
+    [[{ "fmt": "0", "w": 0, "h": 0 }, -1], [0], 0, [], [], []],
+    [
+      [{ "base": "2,2,0,0,0,0", "mipmaps": ["71GXJd1atE6px9LrepzXZl"] }],
+      [1],
+      0,
+      [],
+      [],
+      []
+    ],
+    [[{ "fmt": "0", "w": 0, "h": 0 }, -1], [0], 0, [], [], []],
+    [
+      [{ "base": "2,2,0,0,0,0", "mipmaps": ["86zdOLc0FCXKeMplCfJanA"] }],
+      [1],
+      0,
+      [],
+      [],
+      []
+    ],
+    [
+      [
+        [5, "icon"],
+        [
+          6,
+          "icon",
+          33554432,
+          [
+            [7, -2, [4, "feASQq8JNGvqExmsJSG15c"]],
+            [
+              8,
+              -3,
+              [4, "97lMG0fm9M1qXz+uXzGwMC"],
+              [
+                [2, 250, [3, 0.85, 0]],
+                [2, 251, [3, 0.85, 1]],
+                [2, 252, [3, 0.85, 2]],
+                [2, 253, [3, 0.85, 3]]
+              ]
+            ]
+          ],
+          [9, "44plC18HBLwK2jIzL48aG8", -1, 0]
+        ]
+      ],
+      0,
+      [0, 2, 1, 0, 1, 1, 0, 1, 1, 0, 3, 1, 3],
+      [0, 0, 0, 0],
+      [0, 0, 0, 0],
+      [2, 3, 4, 5]
+    ],
+    [[{ "fmt": "0", "w": 0, "h": 0 }, -1], [0], 0, [], [], []],
+    [
+      [{ "base": "2,2,0,0,0,0", "mipmaps": ["99T/0TQ8JApISh+LvBfKsl"] }],
+      [1],
+      0,
+      [],
+      [],
+      []
+    ],
+    [[[1, "ic_evolution", ".atlas"], -1], 0, 0, [], [], []],
+    [
+      [
+        [
+          0,
+          "ic_ngoai_sexygaming",
+          ".bin",
+          "\nic_ngoai_sexygaming.png\nsize: 1024,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\n3\n  rotate: false\n  xy: 665, 55\n  size: 57, 57\n  orig: 70, 68\n  offset: 7, 4\n  index: -1\n32\n  rotate: false\n  xy: 724, 65\n  size: 55, 55\n  orig: 55, 55\n  offset: 0, 0\n  index: -1\nAura_61\n  rotate: false\n  xy: 679, 122\n  size: 132, 131\n  orig: 132, 131\n  offset: 0, 0\n  index: -1\nBG\n  rotate: false\n  xy: 225, 71\n  size: 219, 182\n  orig: 221, 184\n  offset: 1, 1\n  index: -1\nGAMING\n  rotate: false\n  xy: 135, 37\n  size: 184, 32\n  orig: 186, 34\n  offset: 1, 1\n  index: -1\nLive\n  rotate: false\n  xy: 135, 2\n  size: 91, 33\n  orig: 91, 33\n  offset: 0, 0\n  index: -1\nLive_text\n  rotate: false\n  xy: 340, 18\n  size: 47, 17\n  orig: 47, 17\n  offset: 0, 0\n  index: -1\nR_110\n  rotate: false\n  xy: 446, 114\n  size: 231, 139\n  orig: 256, 144\n  offset: 8, 0\n  index: -1\nSEXY\n  rotate: false\n  xy: 444, 15\n  size: 109, 54\n  orig: 109, 54\n  offset: 0, 0\n  index: -1\nSEXY2\n  rotate: false\n  xy: 2, 3\n  size: 131, 66\n  orig: 131, 66\n  offset: 0, 0\n  index: -1\na\n  rotate: false\n  xy: 321, 37\n  size: 30, 32\n  orig: 32, 34\n  offset: 1, 1\n  index: -1\nborder_s\n  rotate: false\n  xy: 2, 71\n  size: 221, 182\n  orig: 221, 182\n  offset: 0, 0\n  index: -1\ncard1\n  rotate: false\n  xy: 665, 6\n  size: 44, 47\n  orig: 46, 49\n  offset: 1, 1\n  index: -1\ncard2\n  rotate: false\n  xy: 389, 4\n  size: 53, 45\n  orig: 56, 47\n  offset: 2, 1\n  index: -1\nchip\n  rotate: false\n  xy: 555, 30\n  size: 108, 82\n  orig: 108, 82\n  offset: 0, 0\n  index: -1\nchip_back\n  rotate: false\n  xy: 372, 51\n  size: 22, 18\n  orig: 24, 20\n  offset: 1, 1\n  index: -1\ng\n  rotate: false\n  xy: 307, 3\n  size: 31, 32\n  orig: 33, 34\n  offset: 1, 1\n  index: -1\ni\n  rotate: false\n  xy: 353, 37\n  size: 17, 32\n  orig: 19, 34\n  offset: 1, 1\n  index: -1\nlive_triangle\n  rotate: false\n  xy: 396, 53\n  size: 15, 16\n  orig: 15, 16\n  offset: 0, 0\n  index: -1\nlive_triangle2\n  rotate: false\n  xy: 413, 52\n  size: 14, 17\n  orig: 18, 21\n  offset: 4, 2\n  index: -1\nlogo_brand\n  rotate: false\n  xy: 480, 72\n  size: 30, 40\n  orig: 32, 42\n  offset: 1, 1\n  index: -1\nm\n  rotate: false\n  xy: 228, 3\n  size: 42, 32\n  orig: 44, 34\n  offset: 1, 1\n  index: -1\nn\n  rotate: false\n  xy: 272, 3\n  size: 33, 32\n  orig: 35, 34\n  offset: 1, 1\n  index: -1\nstar1\n  rotate: false\n  xy: 446, 74\n  size: 32, 38\n  orig: 32, 38\n  offset: 0, 0\n  index: -1\nstar2\n  rotate: false\n  xy: 711, 4\n  size: 42, 49\n  orig: 42, 49\n  offset: 0, 0\n  index: -1\n",
+          ["ic_ngoai_sexygaming.png"],
+          [0]
+        ],
+        -1
+      ],
+      0,
+      0,
+      [0],
+      [-1],
+      [6]
+    ],
+    [[[1, "Vivo_Gaming", ".atlas"], -1], 0, 0, [], [], []],
+    [
+      [
+        [
+          0,
+          "ic_evolution",
+          ".bin",
+          "\nic_evolution.png\nsize: 1031,1031\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\n01_e\n  rotate: false\n  xy: 202, 746\n  size: 23, 39\n  orig: 23, 39\n  offset: 0, 0\n  index: -1\n02_v\n  rotate: false\n  xy: 202, 705\n  size: 23, 39\n  orig: 23, 39\n  offset: 0, 0\n  index: -1\n03_o\n  rotate: false\n  xy: 202, 664\n  size: 23, 39\n  orig: 23, 39\n  offset: 0, 0\n  index: -1\n08_o\n  rotate: false\n  xy: 202, 664\n  size: 23, 39\n  orig: 23, 39\n  offset: 0, 0\n  index: -1\n04_l\n  rotate: true\n  xy: 826, 326\n  size: 21, 39\n  orig: 21, 39\n  offset: 0, 0\n  index: -1\n05_u\n  rotate: false\n  xy: 202, 623\n  size: 23, 39\n  orig: 23, 39\n  offset: 0, 0\n  index: -1\n06_t\n  rotate: true\n  xy: 225, 190\n  size: 24, 39\n  orig: 24, 39\n  offset: 0, 0\n  index: -1\n07_i\n  rotate: false\n  xy: 869, 554\n  size: 11, 39\n  orig: 11, 39\n  offset: 0, 0\n  index: -1\n09_n\n  rotate: true\n  xy: 266, 192\n  size: 22, 40\n  orig: 22, 40\n  offset: 0, 0\n  index: -1\nLive\n  rotate: true\n  xy: 267, 99\n  size: 91, 33\n  orig: 91, 33\n  offset: 0, 0\n  index: -1\nLive_text\n  rotate: false\n  xy: 302, 91\n  size: 47, 17\n  orig: 47, 17\n  offset: 0, 0\n  index: -1\nbg\n  rotate: false\n  xy: 227, 846\n  size: 220, 183\n  orig: 220, 183\n  offset: 0, 0\n  index: -1\nbgfx1\n  rotate: false\n  xy: 671, 909\n  size: 220, 120\n  orig: 220, 120\n  offset: 0, 0\n  index: -1\nbgfx3\n  rotate: false\n  xy: 2, 660\n  size: 198, 183\n  orig: 198, 183\n  offset: 0, 0\n  index: -1\nbgvfx/01\n  rotate: false\n  xy: 72, 5\n  size: 83, 83\n  orig: 83, 83\n  offset: 0, 0\n  index: -1\nbgvfx/02\n  rotate: false\n  xy: 231, 7\n  size: 81, 81\n  orig: 81, 81\n  offset: 0, 0\n  index: -1\nbgvfx/03\n  rotate: false\n  xy: 308, 110\n  size: 104, 104\n  orig: 104, 104\n  offset: 0, 0\n  index: -1\nbgvfx/04\n  rotate: false\n  xy: 615, 11\n  size: 128, 128\n  orig: 128, 128\n  offset: 0, 0\n  index: -1\nbgvfx/05\n  rotate: false\n  xy: 227, 490\n  size: 171, 171\n  orig: 171, 171\n  offset: 0, 0\n  index: -1\nbgvfx/06\n  rotate: false\n  xy: 449, 666\n  size: 218, 181\n  orig: 218, 181\n  offset: 0, 0\n  index: -1\nbgvfx/07\n  rotate: false\n  xy: 227, 663\n  size: 218, 181\n  orig: 218, 181\n  offset: 0, 0\n  index: -1\nbgvfx/08\n  rotate: false\n  xy: 669, 618\n  size: 218, 181\n  orig: 218, 181\n  offset: 0, 0\n  index: -1\nbgvfx/09\n  rotate: false\n  xy: 447, 483\n  size: 218, 181\n  orig: 218, 181\n  offset: 0, 0\n  index: -1\nborder_s copy\n  rotate: false\n  xy: 2, 845\n  size: 223, 184\n  orig: 223, 184\n  offset: 0, 0\n  index: -1\nc5\n  rotate: false\n  xy: 667, 446\n  size: 200, 170\n  orig: 200, 170\n  offset: 0, 0\n  index: -1\ncar_par\n  rotate: false\n  xy: 893, 872\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncar_vfx_out\n  rotate: true\n  xy: 2, 501\n  size: 157, 190\n  orig: 157, 190\n  offset: 0, 0\n  index: -1\ncard\n  rotate: false\n  xy: 893, 713\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_01\n  rotate: false\n  xy: 889, 554\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_02\n  rotate: true\n  xy: 226, 353\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_03\n  rotate: true\n  xy: 2, 364\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_04\n  rotate: true\n  xy: 2, 227\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_05\n  rotate: true\n  xy: 447, 346\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_06\n  rotate: true\n  xy: 225, 216\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_07\n  rotate: true\n  xy: 2, 90\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_08\n  rotate: true\n  xy: 667, 309\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_09\n  rotate: true\n  xy: 446, 209\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_10\n  rotate: true\n  xy: 869, 244\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_11\n  rotate: true\n  xy: 658, 172\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx/card_12\n  rotate: false\n  xy: 478, 13\n  size: 135, 157\n  orig: 135, 157\n  offset: 0, 0\n  index: -1\ncard_vfx1\n  rotate: true\n  xy: 605, 255\n  size: 66, 51\n  orig: 66, 51\n  offset: 0, 0\n  index: -1\ncard_vfx5\n  rotate: true\n  xy: 2, 3\n  size: 85, 68\n  orig: 85, 68\n  offset: 0, 0\n  index: -1\ncardsd\n  rotate: false\n  xy: 449, 849\n  size: 220, 180\n  orig: 220, 180\n  offset: 0, 0\n  index: -1\nchip1\n  rotate: false\n  xy: 826, 349\n  size: 41, 34\n  orig: 41, 34\n  offset: 0, 0\n  index: -1\nchip1_vfx/01\n  rotate: true\n  xy: 161, 404\n  size: 70, 62\n  orig: 70, 62\n  offset: 0, 0\n  index: -1\nchip1_vfx/02\n  rotate: true\n  xy: 161, 332\n  size: 70, 62\n  orig: 70, 62\n  offset: 0, 0\n  index: -1\nchip1_vfx/03\n  rotate: true\n  xy: 161, 260\n  size: 70, 62\n  orig: 70, 62\n  offset: 0, 0\n  index: -1\nchip1_vfx/04\n  rotate: true\n  xy: 161, 188\n  size: 70, 62\n  orig: 70, 62\n  offset: 0, 0\n  index: -1\nchip1_vfx/05\n  rotate: true\n  xy: 380, 19\n  size: 70, 62\n  orig: 70, 62\n  offset: 0, 0\n  index: -1\nchip1_vfx/06\n  rotate: true\n  xy: 414, 100\n  size: 70, 62\n  orig: 70, 62\n  offset: 0, 0\n  index: -1\nchip1_vfx/07\n  rotate: true\n  xy: 856, 172\n  size: 70, 62\n  orig: 70, 62\n  offset: 0, 0\n  index: -1\nchip1_vfx/08\n  rotate: false\n  xy: 920, 180\n  size: 70, 62\n  orig: 70, 62\n  offset: 0, 0\n  index: -1\nchip1_vfx/09\n  rotate: false\n  xy: 920, 116\n  size: 70, 62\n  orig: 70, 62\n  offset: 0, 0\n  index: -1\nchip1_vfx/chip1_out\n  rotate: false\n  xy: 161, 90\n  size: 104, 96\n  orig: 104, 96\n  offset: 0, 0\n  index: -1\nchip2\n  rotate: true\n  xy: 314, 17\n  size: 72, 64\n  orig: 72, 64\n  offset: 0, 0\n  index: -1\nchip2_vfx\n  rotate: true\n  xy: 157, 5\n  size: 83, 72\n  orig: 83, 72\n  offset: 0, 0\n  index: -1\ncrown_vfx/01\n  rotate: false\n  xy: 826, 288\n  size: 37, 36\n  orig: 37, 36\n  offset: 0, 0\n  index: -1\ncrown_vfx/02\n  rotate: false\n  xy: 615, 217\n  size: 37, 36\n  orig: 37, 36\n  offset: 0, 0\n  index: -1\ncrown_vfx/03\n  rotate: false\n  xy: 615, 179\n  size: 37, 36\n  orig: 37, 36\n  offset: 0, 0\n  index: -1\ncrown_vfx/04\n  rotate: false\n  xy: 615, 141\n  size: 37, 36\n  orig: 37, 36\n  offset: 0, 0\n  index: -1\ncrown_vfx/05\n  rotate: false\n  xy: 817, 219\n  size: 37, 36\n  orig: 37, 36\n  offset: 0, 0\n  index: -1\ncrown_vfx/06\n  rotate: false\n  xy: 817, 181\n  size: 37, 36\n  orig: 37, 36\n  offset: 0, 0\n  index: -1\ncrown_vfx/07\n  rotate: false\n  xy: 992, 206\n  size: 37, 36\n  orig: 37, 36\n  offset: 0, 0\n  index: -1\ncrown_vfx/08\n  rotate: false\n  xy: 992, 168\n  size: 37, 36\n  orig: 37, 36\n  offset: 0, 0\n  index: -1\ncrown_vfx/09\n  rotate: false\n  xy: 992, 130\n  size: 37, 36\n  orig: 37, 36\n  offset: 0, 0\n  index: -1\nhex\n  rotate: true\n  xy: 400, 611\n  size: 50, 45\n  orig: 50, 45\n  offset: 0, 0\n  index: -1\nig_crown\n  rotate: false\n  xy: 992, 92\n  size: 37, 36\n  orig: 37, 36\n  offset: 0, 0\n  index: -1\nig_logo\n  rotate: true\n  xy: 202, 787\n  size: 56, 23\n  orig: 56, 23\n  offset: 0, 0\n  index: -1\nlive_triangle\n  rotate: false\n  xy: 161, 483\n  size: 15, 16\n  orig: 15, 16\n  offset: 0, 0\n  index: -1\nlive_triangle2\n  rotate: false\n  xy: 869, 595\n  size: 18, 21\n  orig: 18, 21\n  offset: 0, 0\n  index: -1\nstar\n  rotate: false\n  xy: 385, 427\n  size: 60, 60\n  orig: 60, 60\n  offset: 0, 0\n  index: -1\ntext_hi/01_e\n  rotate: false\n  xy: 414, 243\n  size: 29, 47\n  orig: 29, 47\n  offset: 0, 0\n  index: -1\ntext_hi/02_v\n  rotate: false\n  xy: 194, 574\n  size: 30, 47\n  orig: 30, 47\n  offset: 0, 0\n  index: -1\ntext_hi/03_o\n  rotate: false\n  xy: 194, 525\n  size: 30, 47\n  orig: 30, 47\n  offset: 0, 0\n  index: -1\ntext_hi/04_l\n  rotate: false\n  xy: 384, 292\n  size: 27, 47\n  orig: 27, 47\n  offset: 0, 0\n  index: -1\ntext_hi/05_u\n  rotate: false\n  xy: 414, 194\n  size: 29, 47\n  orig: 29, 47\n  offset: 0, 0\n  index: -1\ntext_hi/06_t\n  rotate: false\n  xy: 194, 476\n  size: 30, 47\n  orig: 30, 47\n  offset: 0, 0\n  index: -1\ntext_hi/07_i\n  rotate: true\n  xy: 351, 91\n  size: 17, 47\n  orig: 17, 47\n  offset: 0, 0\n  index: -1\ntext_hi/08_o\n  rotate: true\n  xy: 817, 257\n  size: 29, 47\n  orig: 29, 47\n  offset: 0, 0\n  index: -1\ntext_hi/09_n\n  rotate: false\n  xy: 414, 292\n  size: 30, 47\n  orig: 30, 47\n  offset: 0, 0\n  index: -1\ntext_sd\n  rotate: false\n  xy: 671, 801\n  size: 220, 106\n  orig: 220, 106\n  offset: 0, 0\n  index: -1\ntext_vfx/01_e\n  rotate: true\n  xy: 385, 384\n  size: 41, 59\n  orig: 41, 59\n  offset: 0, 0\n  index: -1\ntext_vfx/02_v\n  rotate: false\n  xy: 400, 550\n  size: 42, 59\n  orig: 42, 59\n  offset: 0, 0\n  index: -1\ntext_vfx/03_o\n  rotate: false\n  xy: 400, 489\n  size: 42, 59\n  orig: 42, 59\n  offset: 0, 0\n  index: -1\ntext_vfx/04_l\n  rotate: true\n  xy: 606, 354\n  size: 39, 58\n  orig: 39, 58\n  offset: 0, 0\n  index: -1\ntext_vfx/05_u\n  rotate: true\n  xy: 385, 341\n  size: 41, 59\n  orig: 41, 59\n  offset: 0, 0\n  index: -1\ntext_vfx/06_t\n  rotate: true\n  xy: 606, 395\n  size: 42, 58\n  orig: 42, 58\n  offset: 0, 0\n  index: -1\ntext_vfx/07_i\n  rotate: true\n  xy: 606, 323\n  size: 29, 57\n  orig: 29, 57\n  offset: 0, 0\n  index: -1\ntext_vfx/08_o\n  rotate: false\n  xy: 826, 385\n  size: 41, 59\n  orig: 41, 59\n  offset: 0, 0\n  index: -1\ntext_vfx/09_n\n  rotate: true\n  xy: 606, 439\n  size: 42, 59\n  orig: 42, 59\n  offset: 0, 0\n  index: -1\ntwist\n  rotate: false\n  xy: 869, 381\n  size: 160, 171\n  orig: 160, 171\n  offset: 0, 0\n  index: -1\ntwist 2\n  rotate: false\n  xy: 745, 19\n  size: 150, 151\n  orig: 150, 151\n  offset: 0, 0\n  index: -1\n",
+          ["ic_evolution.png"],
+          [0]
+        ],
+        -1
+      ],
+      0,
+      0,
+      [0],
+      [-1],
+      [7]
+    ]
+  ]
+]

@@ -1,0 +1,1145 @@
+[
+  1,
+  ["139e7f150@6c48a"],
+  ["_textureSource"],
+  ["cc.SpriteFrame", "cc.ImageAsset", "cc.Texture2D"],
+  0,
+  [
+    [
+      [
+        {
+          "name": "Card_13C",
+          "rect": { "x": 3, "y": 3, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_11B",
+          "rect": { "x": 154, "y": 3, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [[{ "fmt": "0", "w": 1022, "h": 988 }, -1], [1], 0, [], [], []],
+    [[{ "base": "2,2,2,2,0,1", "mipmaps": ["139e7f150"] }], [2], 0, [], [], []],
+    [
+      [
+        {
+          "name": "Card_10B",
+          "rect": { "x": 305, "y": 3, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_9R",
+          "rect": { "x": 456, "y": 3, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_10C",
+          "rect": { "x": 607, "y": 3, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_6B",
+          "rect": { "x": 758, "y": 3, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_6R",
+          "rect": { "x": 909, "y": 3, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_2T",
+          "rect": { "x": 3, "y": 119, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_8C",
+          "rect": { "x": 154, "y": 119, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_4C",
+          "rect": { "x": 305, "y": 119, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_13T",
+          "rect": { "x": 456, "y": 119, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_8B",
+          "rect": { "x": 607, "y": 119, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_13R",
+          "rect": { "x": 758, "y": 119, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_9C",
+          "rect": { "x": 909, "y": 154, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_4R",
+          "rect": { "x": 3, "y": 235, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_7R",
+          "rect": { "x": 154, "y": 235, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_3R",
+          "rect": { "x": 305, "y": 235, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_bc",
+          "rect": { "x": 456, "y": 235, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_5R",
+          "rect": { "x": 607, "y": 235, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_5B",
+          "rect": { "x": 758, "y": 235, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_7C",
+          "rect": { "x": 909, "y": 305, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_2C",
+          "rect": { "x": 3, "y": 351, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_9T",
+          "rect": { "x": 154, "y": 351, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_10R",
+          "rect": { "x": 305, "y": 351, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_3B",
+          "rect": { "x": 456, "y": 351, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_11C",
+          "rect": { "x": 607, "y": 351, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_5T",
+          "rect": { "x": 758, "y": 351, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_8T",
+          "rect": { "x": 3, "y": 467, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_6C",
+          "rect": { "x": 154, "y": 467, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_1B",
+          "rect": { "x": 305, "y": 467, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_1C",
+          "rect": { "x": 456, "y": 467, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_12R",
+          "rect": { "x": 607, "y": 467, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_12T",
+          "rect": { "x": 758, "y": 467, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_1T",
+          "rect": { "x": 909, "y": 456, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_6T",
+          "rect": { "x": 3, "y": 583, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_8R",
+          "rect": { "x": 154, "y": 583, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_10T",
+          "rect": { "x": 305, "y": 583, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_9B",
+          "rect": { "x": 456, "y": 583, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_12C",
+          "rect": { "x": 607, "y": 583, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_2B",
+          "rect": { "x": 758, "y": 583, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_5C",
+          "rect": { "x": 909, "y": 607, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_12B",
+          "rect": { "x": 3, "y": 699, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_13B",
+          "rect": { "x": 154, "y": 699, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_3C",
+          "rect": { "x": 305, "y": 699, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_4T",
+          "rect": { "x": 456, "y": 699, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_7B",
+          "rect": { "x": 607, "y": 699, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "card_select1",
+          "rect": { "x": 758, "y": 815, "width": 136, "height": 170 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 136, "height": 170 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_7T",
+          "rect": { "x": 758, "y": 699, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_2R",
+          "rect": { "x": 909, "y": 758, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_3T",
+          "rect": { "x": 3, "y": 815, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_4B",
+          "rect": { "x": 154, "y": 815, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_11T",
+          "rect": { "x": 305, "y": 815, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_11R",
+          "rect": { "x": 456, "y": 815, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "Card_1R",
+          "rect": { "x": 607, "y": 815, "width": 110, "height": 145 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 110, "height": 145 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ]
+  ]
+]

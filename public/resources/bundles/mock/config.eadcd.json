@@ -1,0 +1,15 @@
+{
+  "importBase": "import",
+  "nativeBase": "native",
+  "name": "mock",
+  "deps": [],
+  "uuids": [],
+  "paths": {},
+  "scenes": {},
+  "packs": {},
+  "versions": { "import": [], "native": [] },
+  "redirect": [],
+  "debug": false,
+  "extensionMap": {},
+  "types": []
+}

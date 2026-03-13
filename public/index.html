@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Play 789Club | Trang Game 789 Club, Đăng Ký, Đăng Nhập 2026</title>
+
+    <meta
+      name="description"
+      content="Link chơi ngay game 789 Club với đăng ký 789Club chơi game trực tiếp. Đăng nhập chơi game bài, tài xỉu, xóc đĩa với quà thưởng mỗi ngày! Chơi ngay!"
+    />
+
+    <link rel="canonical" href="https://789clubk.win/" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav_icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="fav_icons/icon-48x48.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav_icons/icon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav_icons/icon-16x16.png"
+    />
+    <link rel="manifest" href="fav_icons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#b10e0e" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+    <meta
+      name="viewport"
+      content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true,
+        viewport-fit=cover"
+    />
+
+    <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- force webkit on 360 -->
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <!-- force edge on IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- force full screen on some browser -->
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+
+    <!--fix fireball/issues/3568 -->
+    <!--<meta name="browsermode" content="application">-->
+    <meta name="x5-page-mode" content="app" />
+
+    <!--<link rel="apple-touch-icon" href=".png" />-->
+    <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+    <link rel="stylesheet" type="text/css" href="style.e598f.css" />
+
+    <!-- Ẩn nút TẢI APP -->
+    <style type="text/css">
+      [id*="taiApp"],
+      [id*="taiapp"],
+      [class*="taiApp"],
+      [class*="taiapp"],
+      [data-id*="taiApp"] {
+        display: none !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+      }
+    </style>
+
+    <style type="text/css">
+      @font-face {
+        font-family: "Grantha Sangam MN";
+        src: url("grantha-sangam-mn-regular.ttf") format("onetype");
+      }
+
+      body {
+        color: #290324;
+        background-color: #290324;
+      }
+      #spinner {
+        margin: 0 auto;
+        width: 60px;
+        height: 50px;
+        text-align: center;
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateY(-50%) translateX(-50%);
+      }
+
+      .gear {
+        position: absolute;
+        /* z-index: -10; */
+        width: 30px;
+        height: 30px;
+        animation: spin 2s infinite;
+      }
+
+      .gear:nth-child(1) {
+        top: -7px;
+        left: -3px;
+      }
+
+      .gear:nth-child(2) {
+        top: 22px;
+        left: -10px;
+        width: 40px;
+        height: 40px;
+      }
+
+      .gear:nth-child(3) {
+        top: -3px;
+        left: 25px;
+        width: 50px;
+        height: 50px;
+        animation: spin-reverse 2s infinite;
+      }
+
+      .number7 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -27px;
+        margin-left: -28px;
+        width: 20px;
+        height: 20px;
+      }
+
+      .number8 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 1px;
+        margin-left: -35px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .number9 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -24px;
+        margin-left: 0px;
+        width: 40px;
+        height: 40px;
+      }
+
+      @keyframes spin {
+        50% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin-reverse {
+        50% {
+          transform: rotate(-360deg);
+        }
+      }
+
+      .bgColor {
+        background-color: #290324;
+        width: 110vmax;
+        height: 110vmax;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+      }
+
+      .domain-notice-text {
+        text-align: center;
+        font-family: "Grantha Sangam MN", Arial, sans-serif;
+        font-size: clamp(13px, 2vw, 24px);
+        color: #d6afe3;
+        position: absolute;
+        width: 90vw;
+        max-width: 900px;
+        box-sizing: border-box;
+        left: 50%;
+        top: calc(100% + 110px);
+        transform: translateX(-50%);
+      }
+
+      .real-domain::after {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url("icon-checks.png");
+        background-size: cover;
+        margin-left: 7px;
+        transform: translateY(-4px);
+      }
+
+      a:link,
+      a:visited {
+        color: #d6afe3;
+      }
+
+      a:active,
+      a:hover {
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body scroll="no" style="overflow: hidden">
+    <div id="qrcode" style="width: 0px; height: 0px"></div>
+    <div id="splash" style="display: none"></div>
+    <div id="splashGamePortrait" style="display: none"></div>
+    <div id="loadingIcon" class="rotating" style="display: none"></div>
+
+    <div id="GameDiv">
+      <div id="Cocos3dGameContainer">
+        <canvas
+          id="GameCanvas"
+          oncontextmenu="event.preventDefault()"
+          tabindex="0"
+        ></canvas>
+      </div>
+    </div>
+
+    <div id="spinner">
+      <div class="gear">
+        <svg id="blue" viewBox="0 0 100 100" fill="#1194d1">
+          <path
+            d="M97.6,55.7V44.3L84,41.4c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3L41.4,16
+        	c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4L16,58.6c0.8,3.3,2.1,6.4,3.9,9.3l-7.6,11.7
+        	l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9c1.7-2.9,3.1-6,3.9-9.3
+        	L97.6,55.7z M50,75.8c-14.4,0-25.8-11.6-25.8-25.8S35.8,24.2,50,24.2S75.8,35.8,75.8,50S64.4,75.8,50,75.8z"
+          />
+        </svg>
+      </div>
+
+      <div class="gear">
+        <svg id="yellow" viewBox="0 0 100 100" fill="#D17C00">
+          <path
+            d="M97.6,55.7V44.3L84,41.4c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3L41.4,16
+        	c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4L16,58.6c0.8,3.3,2.1,6.4,3.9,9.3l-7.6,11.7
+        	l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9c1.7-2.9,3.1-6,3.9-9.3
+        	L97.6,55.7z M50,75.8c-14.4,0-25.8-11.6-25.8-25.8S35.8,24.2,50,24.2S75.8,35.8,75.8,50S64.4,75.8,50,75.8z"
+          />
+        </svg>
+      </div>
+
+      <div class="gear">
+        <svg id="pink" viewBox="0 0 100 100" fill="#bf0871">
+          <path
+            d="M97.6,55.7V44.3L84,41.4c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3L41.4,16
+        	c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4L16,58.6c0.8,3.3,2.1,6.4,3.9,9.3l-7.6,11.7
+        	l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9c1.7-2.9,3.1-6,3.9-9.3
+        	L97.6,55.7z M50,75.8c-14.4,0-25.8-11.6-25.8-25.8S35.8,24.2,50,24.2S75.8,35.8,75.8,50S64.4,75.8,50,75.8z"
+          />
+        </svg>
+      </div>
+
+      <div class="number7">
+        <svg id="blue" viewBox="0 0 100 100" fill="#94DDFF">
+          <path
+            d="M54.7,38.3c-1.1,0-2.2,0-3.2,0c-5.3,0-10.5,0-15.8,0c-0.6,0-0.8-0.1-0.8-0.8c0-2.4,0-4.8,0-7.3c0-0.6,0.2-0.7,0.7-0.7
+      		c9.8,0,19.7,0,29.5,0c0.6,0,0.8,0.2,0.7,0.7c0,1.8,0,3.7,0,5.5c0,0.3-0.1,0.6-0.2,0.9c-5.8,12-11.6,24.1-17.5,36.1
+      		c-0.2,0.4-0.4,0.5-0.8,0.5c-3.2,0-6.4,0-9.7,0c-0.9,0-0.9-0.1-0.5-0.8C43,61.3,48.7,50.2,54.4,39C54.5,38.8,54.6,38.6,54.7,38.3z"
+          />
+        </svg>
+      </div>
+
+      <div class="number8">
+        <svg id="yellow" viewBox="0 0 100 100" fill="#FFE388">
+          <path
+            d="M59.6,50c0.4,0.2,0.8,0.3,1.1,0.5c3.8,1.9,6.4,4.7,7.2,9c1.2,6-1.6,11.6-7,14.6c-2.6,1.4-5.4,2.2-8.3,2.5
+    			c-4,0.4-7.9,0.1-11.7-1.3s-6.8-3.8-8.4-7.7c-2.1-5.1-0.4-11,4.2-14.4c1-0.7,2.1-1.4,3.2-2c-0.3-0.2-0.5-0.3-0.8-0.5
+    			c-8-4.8-7.3-14.7-1.3-19.6c2.6-2.1,5.5-3.2,8.8-3.7c3.9-0.6,7.8-0.4,11.5,1c3.9,1.5,6.8,4.2,7.8,8.4c1.2,4.7-0.7,9.5-4.8,12.3
+    			C60.7,49.4,60.2,49.6,59.6,50z M56.4,62.7c0-2-0.7-3.8-2.3-5c-0.8-0.7-1.8-1.2-2.7-1.7c-1.9-1.1-3.5-0.6-5.1,0.6
+    			c-3.4,2.5-3.7,7.7-0.5,10.4c2,1.7,4.4,1.9,6.8,1.1C55,67.3,56.4,65.3,56.4,62.7z M55.4,40.1c-0.1-1.8-0.8-3.6-2.9-4.6
+    			c-1-0.5-2.2-0.6-3.3-0.5c-2.3,0.2-4,1.4-4.7,3.4c-0.7,2.2-0.1,4.2,1.7,5.8c1.3,1.1,2.8,1.7,4.3,2.2c0.1,0,0.3,0,0.5,0
+    			C53.5,45.7,55.4,43.1,55.4,40.1z"
+          />
+        </svg>
+      </div>
+
+      <div class="number9">
+        <svg id="pink" viewBox="0 0 100 100" fill="#FF83A9">
+          <path
+            d="M37.3,75c0-0.2,0-0.4,0-0.6c0-2.5,0-5,0-7.5c0-0.6,0.2-0.8,0.8-0.7c3.2,0.2,6.3,0,9.3-1c4.7-1.5,7.8-4.6,9.4-9.2
+      		c0.1-0.2,0.1-0.4,0.2-0.6c-0.1,0-0.1,0-0.1,0c-2.1,1.9-4.7,2.7-7.5,2.9c-3.5,0.3-6.8-0.3-9.7-2.2c-3.8-2.4-5.9-5.9-6.4-10.4
+      		c-0.9-7.3,2.8-14.1,9.3-17.1c5.9-2.7,11.8-2.7,17.5,0.5c3.7,2.1,5.9,5.4,7.3,9.4c1.2,3.6,1.5,7.3,1.2,11.1c-0.2,4-1,7.9-2.8,11.6
+      		c-3.3,7-8.9,11.2-16.4,13c-3.7,0.9-7.5,1.1-11.4,1c-0.1,0-0.3,0-0.4,0C37.6,75,37.5,75,37.3,75z M44.3,42.8
+      		c0.1,0.7,0.1,1.4,0.2,2.1c0.4,2.1,1.4,3.9,3.6,4.7c2.5,1,4.9,0.7,7.1-0.9c0.9-0.7,1.7-1.5,1.8-2.6c0.4-2.9,0.1-5.7-1.5-8.3
+      		c-2.3-3.8-7.5-3.8-9.9,0C44.7,39.4,44.3,41.1,44.3,42.8z"
+          />
+        </svg>
+      </div>
+
+      <!-- <div class="domain-notice-text">
+      Quý khách lưu ý sử dụng tên miền an toàn <a id="real-domain" class="real-domain" href="https://789club.cc/"
+        target="_blank"><strong>789CLUB.CC</strong></a><br>
+      Truy cập <a href="https://789.club/" target="_blank"><strong>789.CLUB</strong></a> để kiểm tra tên miền chính hãng.
+    </div> -->
+
+      <div class="bgColor"></div>
+    </div>
+
+    <div id="mask">
+      <!-- <h1 id="tip">Vui lòng vuốt lên để thấy toàn màn hình</h1>-->
+      <div id="image"></div>
+    </div>
+    <div id="handImage"></div>
+
+    <div
+      id="div_full_screen"
+      style="width: 100%; height: 100%; visibility: hidden"
+    >
+      <div id="enterFullscreen" class="enterFullScreen_Portrait"></div>
+      <div id="exitFullscreen" class="exitFullScreen_Portrait"></div>
+    </div>
+
+    <!-- Hook chuyển mọi request demo7892.fun (paygate, id, ...) về same-origin -->
+    <script src="local-proxy-hook.js" charset="utf-8"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.min.js"
+      charset="utf-8"
+    ></script>
+    <!--<script src="./lib/common360-v1.js" charset="utf-8"></script>-->
+    <script src="./lib/common360-v1-251610-1334.js" charset="utf-8"></script>
+    <script src="./lib/howler.min.js" charset="utf-8"></script>
+
+    <!-- Polyfills bundle. -->
+    <script src="src/polyfills.bundle.5adbf.js" charset="utf-8"></script>
+
+    <!-- SystemJS support. -->
+    <script src="src/system.bundle.692e9.js" charset="utf-8"></script>
+
+    <!-- Import map -->
+    <script
+      src="src/import-map.c7214.json"
+      type="systemjs-importmap"
+      charset="utf-8"
+    ></script>
+
+    <script>
+      System.import("./index.68dec.js").catch(function (err) {
+        console.error(err);
+      });
+    </script>
+
+    <script>
+      // let domain = '789.club';
+      // const hostname = window.location.hostname; // Lấy "sub.example.com"
+      // const parts = hostname.split('.');
+      // if (parts.length >= 2) {
+      //   domain = parts.slice(-2).join('.'); // Lấy 2 phần cuối cùng (ví dụ: example.com)
+      // }
+      // const realDomain = document.getElementById("real-domain");
+      // realDomain.href = window.location.protocol + '//' + domain + '/';
+      // realDomain.innerHTML = "<strong>" + domain.toUpperCase() + "</strong>";
+      var zzPayload;
+    </script>
+    <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c4c2d955e04d083","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.9.1","token":"5c55808447df4e24bdc04c47d409d67a"}' crossorigin="anonymous"></script> -->
+  </body>
+</html>

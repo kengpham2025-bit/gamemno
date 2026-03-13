@@ -1,0 +1,22 @@
+# Dependencies - không upload (Vercel sẽ chạy npm install)
+node_modules
+
+# Build output - không cần upload (Vercel sẽ chạy npm run build)
+.next
+out
+build
+dist
+
+# Logs & temp
+logs
+*.log
+.tmp
+temp
+
+# Git & IDE
+.git
+.vscode
+.idea
+
+# Optional: bỏ comment nếu public có file rất lớn
+# public/internal

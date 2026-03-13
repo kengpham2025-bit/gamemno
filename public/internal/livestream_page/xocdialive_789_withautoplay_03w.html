@@ -1,0 +1,585 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>XocDiaLiveStream</title>
+    <style>
+        html,
+        body {
+            color: #1c0d33;
+            background-color: #1c0d33;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        #spinner {
+            margin: 0 auto;
+            width: 60px;
+            height: 50px;
+            text-align: center;
+            font-size: 10px;
+            position: absolute;
+            top: 30vw;
+            left: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%);
+        }
+
+        #baotri {
+            position: absolute;
+            z-index: 3;
+            left: 0vw;
+            top: 0vh;
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            border: none;
+            display: none;
+        }
+
+        .gear {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            animation: spin 2s infinite;
+        }
+
+        .gear:nth-child(1) {
+            top: -7px;
+            left: -3px;
+        }
+
+        .gear:nth-child(2) {
+            top: 22px;
+            left: -10px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .gear:nth-child(3) {
+            top: -3px;
+            left: 25px;
+            width: 50px;
+            height: 50px;
+            animation: spin-reverse 2s infinite;
+        }
+
+        .number7 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -27.0px;
+            margin-left: -28.0px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .number8 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: 1.0px;
+            margin-left: -35.0px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .number9 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -24.0px;
+            margin-left: 0.0px;
+            width: 40px;
+            height: 40px;
+        }
+
+        @keyframes spin {
+            50% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin-reverse {
+            50% {
+                transform: rotate(-360deg);
+            }
+        }
+
+        @keyframes zoom-in-zoom-out {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(1.1, 1.1);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-out {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        .bgColor {
+            background-color: #1c0d33;
+            width: 110vmax;
+            height: 110vmax;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+
+        .blackScreen {
+            background-color: #000000b3;
+            width: 110vmax;
+            height: 110vmax;
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            z-index: 1000;
+            transform: translate(-50%, -50%);
+        }
+
+        .full-height {
+            height: 120vh;
+            width: 150vw;
+            /* bigger dealer image */
+            margin-left: -26vw;
+            /* center dealer */
+            margin-top: -5.2vw;
+            bottom: 7%;
+            /* top Video layout */
+        }
+
+        .cover {
+            width: 150vw;
+            height: 80vw;
+            left: -25vw;
+            top: 85vh;
+        }
+
+        #soundon {
+            position: absolute;
+            left: 88vw;
+            top: 7.5vh;
+            z-index: 3;
+            width: 9vw;
+            height: auto;
+            background-color: transparent;
+            border: none;
+            display: none;
+        }
+
+        #soundoff {
+            position: absolute;
+            left: 88vw;
+            top: 7.5vh;
+            z-index: 3;
+            width: 9vw;
+            height: auto;
+            background-color: transparent;
+            border: none;
+            display: none;
+        }
+
+        .baseDiv {
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            z-index: 2
+        }
+        .baseBlock{
+            touch-action: none;
+            pointer-events:none;
+            -webkit-user-drag: none;
+        }
+        .btnBet {
+            width: 43.18766vw;
+            height: 23.13625vw;
+            top: 91.5vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .bgMoney{
+            width: 21.851vw; height: 3.47045vw;
+            text-align: center;
+            margin-top: 2%;
+        }
+        .lblUserBet {
+            font-family: 'BebasNeue';
+            letter-spacing: 0.17vw;
+            font-size: 3.5vw;
+            color: #fff6e4;
+            overflow: hidden;
+            transform-origin: center;
+        }
+        /*Note: Only affect with text and the parent have text-align: center; */
+        .centerDiv{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @font-face {
+            font-family: 'DIN Alternate Bold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('DIN Alternate Bold'), url('./XocDiaLiveStream_Res/DINAlternate-Bold.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'BebasNeue';
+            font-style: normal;
+            font-weight: normal;
+            src: local('BebasNeue'), url('./XocDiaLiveStream_Res/BebasNeue.woff') format('woff');
+        }
+    </style>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+</head>
+ <script type="text/javascript" src="https://gemtestclient.site/livetoken789"></script>
+
+<body scroll="no" style="overflow: hidden;" ontouchmove="event.preventDefault()">
+    <div id="playerDiv" class="full-height"
+        style="overflow: hidden; position: relative; background-color: #1c0d33; display: block;"><video
+            id="h5live-playerDiv" playsinline="" webkit-playsinline=""
+            style="background-color: #1c0d33; display: block; z-index: 1; width: 200%; height: 200%; position: absolute; left: 50%; top: 50%; margin-right: -50%; transform: translate(-50%, -50%) scaleX(2) scaleY(2) rotate(0deg);">
+        </video></div>
+
+
+    <div id="blocktouch-playerDiv"
+        style="background-color: rgba(0,0,0,0.7); width: 200%; height: 200%; position: absolute; left: -10vw; top: -10vw; z-index: 10; display: none;">
+    </div>
+
+    <div id="spinner" style="display: block;">
+        <div class="gear">
+            <svg id="blue" viewBox="0 0 100 100" fill="#1194d1">
+                <path
+                    d="M97.6,55.7V44.3L84,41.4c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3L41.4,16
+                c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4L16,58.6c0.8,3.3,2.1,6.4,3.9,9.3l-7.6,11.7
+                l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9c1.7-2.9,3.1-6,3.9-9.3
+                L97.6,55.7z M50,75.8c-14.4,0-25.8-11.6-25.8-25.8S35.8,24.2,50,24.2S75.8,35.8,75.8,50S64.4,75.8,50,75.8z">
+                </path>
+            </svg>
+        </div>
+        <div class="gear">
+            <svg id="yellow" viewBox="0 0 100 100" fill="#D17C00">
+                <path
+                    d="M97.6,55.7V44.3L84,41.4c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3L41.4,16
+                c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4L16,58.6c0.8,3.3,2.1,6.4,3.9,9.3l-7.6,11.7
+                l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9c1.7-2.9,3.1-6,3.9-9.3
+                L97.6,55.7z M50,75.8c-14.4,0-25.8-11.6-25.8-25.8S35.8,24.2,50,24.2S75.8,35.8,75.8,50S64.4,75.8,50,75.8z">
+                </path>
+            </svg>
+        </div>
+        <div class="gear">
+            <svg id="pink" viewBox="0 0 100 100" fill="#bf0871">
+                <path
+                    d="M97.6,55.7V44.3L84,41.4c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3L41.4,16
+                c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4L16,58.6c0.8,3.3,2.1,6.4,3.9,9.3l-7.6,11.7
+                l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9c1.7-2.9,3.1-6,3.9-9.3
+                L97.6,55.7z M50,75.8c-14.4,0-25.8-11.6-25.8-25.8S35.8,24.2,50,24.2S75.8,35.8,75.8,50S64.4,75.8,50,75.8z">
+                </path>
+            </svg>
+        </div>
+        <div class="number7">
+            <svg id="blue" viewBox="0 0 100 100" fill="#94DDFF">
+                <path
+                    d="M54.7,38.3c-1.1,0-2.2,0-3.2,0c-5.3,0-10.5,0-15.8,0c-0.6,0-0.8-0.1-0.8-0.8c0-2.4,0-4.8,0-7.3c0-0.6,0.2-0.7,0.7-0.7
+                  c9.8,0,19.7,0,29.5,0c0.6,0,0.8,0.2,0.7,0.7c0,1.8,0,3.7,0,5.5c0,0.3-0.1,0.6-0.2,0.9c-5.8,12-11.6,24.1-17.5,36.1
+                  c-0.2,0.4-0.4,0.5-0.8,0.5c-3.2,0-6.4,0-9.7,0c-0.9,0-0.9-0.1-0.5-0.8C43,61.3,48.7,50.2,54.4,39C54.5,38.8,54.6,38.6,54.7,38.3z">
+                </path>
+            </svg>
+        </div>
+        <div class="number8">
+            <svg id="yellow" viewBox="0 0 100 100" fill="#FFE388">
+                <path d="M59.6,50c0.4,0.2,0.8,0.3,1.1,0.5c3.8,1.9,6.4,4.7,7.2,9c1.2,6-1.6,11.6-7,14.6c-2.6,1.4-5.4,2.2-8.3,2.5
+                    c-4,0.4-7.9,0.1-11.7-1.3s-6.8-3.8-8.4-7.7c-2.1-5.1-0.4-11,4.2-14.4c1-0.7,2.1-1.4,3.2-2c-0.3-0.2-0.5-0.3-0.8-0.5
+                    c-8-4.8-7.3-14.7-1.3-19.6c2.6-2.1,5.5-3.2,8.8-3.7c3.9-0.6,7.8-0.4,11.5,1c3.9,1.5,6.8,4.2,7.8,8.4c1.2,4.7-0.7,9.5-4.8,12.3
+                    C60.7,49.4,60.2,49.6,59.6,50z M56.4,62.7c0-2-0.7-3.8-2.3-5c-0.8-0.7-1.8-1.2-2.7-1.7c-1.9-1.1-3.5-0.6-5.1,0.6
+                    c-3.4,2.5-3.7,7.7-0.5,10.4c2,1.7,4.4,1.9,6.8,1.1C55,67.3,56.4,65.3,56.4,62.7z M55.4,40.1c-0.1-1.8-0.8-3.6-2.9-4.6
+                    c-1-0.5-2.2-0.6-3.3-0.5c-2.3,0.2-4,1.4-4.7,3.4c-0.7,2.2-0.1,4.2,1.7,5.8c1.3,1.1,2.8,1.7,4.3,2.2c0.1,0,0.3,0,0.5,0
+                    C53.5,45.7,55.4,43.1,55.4,40.1z"></path>
+            </svg>
+        </div>
+        <div class="number9">
+            <svg id="pink" viewBox="0 0 100 100" fill="#FF83A9">
+                <path d="M37.3,75c0-0.2,0-0.4,0-0.6c0-2.5,0-5,0-7.5c0-0.6,0.2-0.8,0.8-0.7c3.2,0.2,6.3,0,9.3-1c4.7-1.5,7.8-4.6,9.4-9.2
+                  c0.1-0.2,0.1-0.4,0.2-0.6c-0.1,0-0.1,0-0.1,0c-2.1,1.9-4.7,2.7-7.5,2.9c-3.5,0.3-6.8-0.3-9.7-2.2c-3.8-2.4-5.9-5.9-6.4-10.4
+                  c-0.9-7.3,2.8-14.1,9.3-17.1c5.9-2.7,11.8-2.7,17.5,0.5c3.7,2.1,5.9,5.4,7.3,9.4c1.2,3.6,1.5,7.3,1.2,11.1c-0.2,4-1,7.9-2.8,11.6
+                  c-3.3,7-8.9,11.2-16.4,13c-3.7,0.9-7.5,1.1-11.4,1c-0.1,0-0.3,0-0.4,0C37.6,75,37.5,75,37.3,75z M44.3,42.8
+                  c0.1,0.7,0.1,1.4,0.2,2.1c0.4,2.1,1.4,3.9,3.6,4.7c2.5,1,4.9,0.7,7.1-0.9c0.9-0.7,1.7-1.5,1.8-2.6c0.4-2.9,0.1-5.7-1.5-8.3
+                  c-2.3-3.8-7.5-3.8-9.9,0C44.7,39.4,44.3,41.1,44.3,42.8z"></path>
+            </svg>
+        </div>
+        <div class="bgColor"></div>
+    </div>
+    <img draggable="false" src="./XocDiaLiveStream_Res/xd-baotri.png" id="baotri">
+
+    <div draggable="false" id="blackScreen" class="blackScreen" onclick="callClickBlackScreen()">
+    </div>
+
+    <script>
+        window.ontouchstart = function (event) {
+            if (event.touches.length > 1) {
+                event.preventDefault();
+            }
+        }
+        document.addEventListener('touchmove', e => {
+            if (e.touches.length > 1) {
+                e.preventDefault();
+            }
+        }, { passive: false })
+        var messageToGameScheme = "messagetogame://";
+        window.addEventListener('message', function (e) {
+            var text = e.data;
+            if (typeof text !== 'string') {
+                return;
+            }
+            if (!messageToGameScheme) {
+                return;
+            }
+            if (text.indexOf(messageToGameScheme) === 0) {
+                const func = text.substring(messageToGameScheme.length);
+                try {
+                    eval(func);
+                } catch (e) {
+                    console.log(e);
+                }
+            }
+        });
+        function showWhenVideoPlay() {
+            // document.getElementById('bgdlname').style.display = 'block';
+            // document.getElementById('bgCountDown').style.display = 'block';
+            // document.getElementById('soundIcon').style.display = 'block';
+        }
+
+        function soundOn() {
+            player.unmute();
+            player.setVolume(1);
+        }
+
+        function soundOff() {
+            player.mute();
+            player.setVolume(0);
+        }
+    </script>
+
+    <script src="https://demo.nanocosmos.de/nanoplayer/api/release/nanoplayer.4.min.js?20210225"></script>
+    <script>
+        var queryString = window.location.search;
+
+        var params = new URLSearchParams(queryString);
+
+        // var streamName = params.get('stream-name');
+        // var jwtoken = params.get('jwtoken');
+        var isMuted = params.get('isMuted');
+        isMuted = (isMuted == null || isMuted == undefined) ? true : Boolean(parseInt(isMuted));
+        var isMutedByManual = params.get('isMutedByManual');
+        isMutedByManual = (isMutedByManual == null || isMutedByManual == undefined) ? true : Boolean(parseInt(isMutedByManual));
+
+         const streamName = dataJson.data.streamName;
+        const jwtoken = dataJson.data.token;
+
+        var player;
+        var middleViewEl;
+        var config = {
+            "source": {
+                "entries": [
+                    {
+                        "index": 0,
+                        "label": "high",
+                        "tag": "this is a high quality stream",
+                        "info": {
+                            "bitrate": 1200,
+                            "width": 1280,
+                            "height": 720,
+                            "framerate": 30
+                        },
+                        "h5live": {
+                            "rtmp": {
+                                "url": "rtmp://bintu-splay.nanocosmos.de/splay",
+                                "streamname": streamName
+                            },
+                            "server": {
+                                "websocket": "wss://bintu-h5live-secure.nanocosmos.de/h5live/authstream",
+                                "hls": "https://bintu-h5live-secure.nanocosmos.de/h5live/authhttp/playlist.m3u8"
+                            },
+                            "security": {
+                                "jwtoken": jwtoken
+                            }
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "label": "medium",
+                        "tag": "this is a medium quality stream",
+                        "info": {
+                            "bitrate": 800,
+                            "width": 864,
+                            "height": 480,
+                            "framerate": 30
+                        },
+                        "h5live": {
+                            "rtmp": {
+                                "url": "rtmp://bintu-splay.nanocosmos.de/splay",
+                                "streamname": streamName
+                            },
+                            "server": {
+                                "websocket": "wss://bintu-h5live-secure.nanocosmos.de/h5live/authstream",
+                                "hls": "https://bintu-h5live-secure.nanocosmos.de/h5live/authhttp/playlist.m3u8"
+                            },
+                            "security": {
+                                "jwtoken": jwtoken
+                            }
+                        }
+                    },
+                    {
+                        "index": 2,
+                        "label": "low",
+                        "tag": "this is a low quality stream",
+                        "info": {
+                            "bitrate": 400,
+                            "width": 426,
+                            "height": 240,
+                            "framerate": 15
+                        },
+                        "h5live": {
+                            "rtmp": {
+                                "url": "rtmp://bintu-splay.nanocosmos.de/splay",
+                                "streamname": streamName
+                            },
+                            "server": {
+                                "websocket": "wss://bintu-h5live-secure.nanocosmos.de/h5live/authstream",
+                                "hls": "https://bintu-h5live-secure.nanocosmos.de/h5live/authhttp/playlist.m3u8"
+                            },
+                            "security": {
+                                "jwtoken": jwtoken
+                            }
+                        }
+                    }
+                ],
+                "options": {
+                    "adaption": {
+                        "rule": "none"
+                    },
+                    "switch": {
+                        'method': 'server',
+                        'pauseOnError': false,
+                        'forcePlay': true,
+                        'timeout': 10,
+                    }
+                },
+                "startIndex": 2
+            },
+            "playback": {
+                "autoplay": true,
+                "automute": true,
+                "muted": true,
+                "faststart": true
+            },
+            "style": {
+                "displayMutedAutoplay": isMuted,
+                "controls": false,
+                "fullScreenControl": false,
+                "interactive": true,
+                "backgroundColor": "#1c0d33",
+                "symbolColor": "rgba(209,124,0,1)",
+            },
+            "events": {
+                "onSwitchStreamSuccess": function (e) {},
+                "onReady": function (e) {
+                    middleViewEl = document.getElementById('middleView-playerDiv');
+                    middleViewEl.ontouchmove = function (event) {
+                        event.preventDefault();
+                    }
+
+                    var videoEl = document.getElementById('playerDiv');
+                    videoEl.style.display = "none";
+                },
+                "onPlay": function (e) {
+                    var spinner = document.getElementById('spinner');
+                    spinner.style.display = "none";
+
+                    var videoEl = document.getElementById('playerDiv');
+                    videoEl.style.display = "block";
+
+                    // showWhenVideoPlay();
+                    if (isMutedByManual == false)
+                        soundOn();
+                },
+                "onPause": function (e) {},
+                "onLoading": function (e) {},
+                "onStartBuffering": function (e) {},
+                "onStopBuffering": function (e) {},
+                "countDown": function (e) {},
+                "onUnmute": function (e) {
+                    parent.postMessage("unMuteFromHtml", "*");
+                },
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            player = new NanoPlayer("playerDiv");
+            player.setup(config).then(function (config) {
+                // console.log("setup success");
+                // console.log("config: " + JSON.stringify(config, undefined, 4));
+
+                // var controlsEl = document.getElementById('controls-playerDiv');
+                // controlsEl.ontouchmove = function(event){
+                //     event.preventDefault();
+                // }
+
+            }, function (error) {
+                alert(error.message);
+            });
+        });
+
+        var videoEl = document.getElementById('h5live-playerDiv');
+        videoEl.ontouchmove = function (event) {
+            event.preventDefault();
+        }
+        videoEl.onplaying = () => {
+            showWhenVideoPlay();
+        };
+        function showWhenVideoPlay() {
+            console.log("showWhenVideoPlay ")
+            parent.postMessage("video_play", "*");
+        }
+    </script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dbbd6880b3dff8b',t:'MTc3MzQxMzI5MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

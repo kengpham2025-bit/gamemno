@@ -1,0 +1,671 @@
+[
+  1,
+  [
+    "3escRCd0RA1L544WEE8MHj@f9941",
+    "87PAiVk+tIG6Cu5JzdHL39@f9941",
+    "e1K+oo9KlNm5Dm6p2vxhU1",
+    "5erEIM51pOr4ZbxTPIRSQY@f9941",
+    "f5mxRIi4dB94sB1ytqqMx3@f9941",
+    "c3VQfEAq9HNZ7k4yzIG7+X",
+    "e8ay3we7tJz7mQfNGwKwJP"
+  ],
+  [
+    "node",
+    "_spriteFrame",
+    "targetInfo",
+    "root",
+    "_target",
+    "data",
+    "_checkMark",
+    "_parent",
+    "mini_game_node",
+    "miniGameCloseNode",
+    "asset",
+    "skel_icon",
+    "xiu_in_closed_node",
+    "tai_in_closed_node",
+    "txt_time_in_closed_node",
+    "time_in_closed_node",
+    "closed_node",
+    "btn_open_sound_cmp",
+    "sfx_button_click",
+    "_font"
+  ],
+  [
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_layer",
+        "_active",
+        "_objFlags",
+        "__editorExtras__",
+        "_prefab",
+        "_components",
+        "_parent",
+        "_children",
+        "_lpos",
+        "_lscale"
+      ],
+      -2,
+      4,
+      9,
+      1,
+      2,
+      5,
+      5
+    ],
+    [
+      "cc.Node",
+      [
+        "_name",
+        "_layer",
+        "_parent",
+        "_components",
+        "_prefab",
+        "_children",
+        "_lpos"
+      ],
+      1,
+      1,
+      12,
+      4,
+      2,
+      5
+    ],
+    [
+      "cc.Sprite",
+      ["_sizeMode", "_isTrimmedMode", "node", "__prefab", "_spriteFrame"],
+      1,
+      1,
+      4,
+      6
+    ],
+    [
+      "cc.Widget",
+      [
+        "_alignFlags",
+        "_originalWidth",
+        "_originalHeight",
+        "_alignMode",
+        "_left",
+        "_right",
+        "node",
+        "__prefab"
+      ],
+      -3,
+      1,
+      4
+    ],
+    ["cc.UIOpacity", ["_opacity", "node", "__prefab"], 2, 1, 4],
+    [
+      "cc.PrefabInfo",
+      [
+        "fileId",
+        "targetOverrides",
+        "root",
+        "asset",
+        "nestedPrefabInstanceRoots"
+      ],
+      1,
+      1,
+      1,
+      2
+    ],
+    ["cc.Prefab", ["_name"], 2],
+    ["cc.CompPrefabInfo", ["fileId"], 2],
+    ["cc.UITransform", ["node", "__prefab", "_contentSize"], 3, 1, 4, 5],
+    [
+      "5756fh1+PRNDr6zBsRB0hbb",
+      ["node", "__prefab", "mini_game_node"],
+      3,
+      1,
+      4,
+      1
+    ],
+    ["cc.PrefabInfo", ["fileId", "root", "instance", "asset"], 2, 1, 4, 6],
+    [
+      "0e1849VDNhBQormv1Bt2frU",
+      ["node", "__prefab", "miniGameCloseNode"],
+      3,
+      1,
+      4,
+      1
+    ],
+    [
+      "cc.PrefabInstance",
+      ["fileId", "prefabRootNode", "propertyOverrides"],
+      2,
+      1,
+      9
+    ],
+    ["CCPropertyOverrideInfo", ["value", "propertyPath", "targetInfo"], 1, 1],
+    [
+      "CCPropertyOverrideInfo",
+      ["propertyPath", "targetInfo", "value"],
+      2,
+      1,
+      8
+    ],
+    ["cc.TargetInfo", ["localID"], 2],
+    ["e9fb5dJ67pGlbB/YBFCqc2L", ["node", "__prefab"], 3, 1, 4],
+    [
+      "0f55bWlxslHYYj7fea5JzeV",
+      [
+        "node",
+        "__prefab",
+        "btn_open_sound_cmp",
+        "closed_node",
+        "time_in_closed_node",
+        "txt_time_in_closed_node",
+        "tai_in_closed_node",
+        "xiu_in_closed_node",
+        "skel_icon"
+      ],
+      3,
+      1,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      "cc.Toggle",
+      [
+        "_interactable",
+        "_transition",
+        "node",
+        "__prefab",
+        "_normalColor",
+        "_hoverColor",
+        "_pressedColor",
+        "_target",
+        "_checkMark"
+      ],
+      1,
+      1,
+      4,
+      5,
+      5,
+      5,
+      1,
+      1
+    ],
+    ["75004oWkDtN/r1G/Wi9q+UP", ["to", "node", "__prefab"], 2, 1, 4],
+    [
+      "cc.Button",
+      [
+        "_transition",
+        "_zoomScale",
+        "node",
+        "__prefab",
+        "_hoverColor",
+        "_pressedColor",
+        "_target"
+      ],
+      1,
+      1,
+      4,
+      5,
+      5,
+      1
+    ],
+    ["30794hggfJHs5jKXkE0PSVE", ["time", "node", "__prefab"], 2, 1, 4],
+    ["a0f1briJ25PvYMM4FLHXNhQ", ["node", "__prefab", "move_node"], 3, 1, 4, 1],
+    [
+      "sp.Skeleton",
+      ["_preCacheMode", "_premultipliedAlpha", "node", "__prefab"],
+      1,
+      1,
+      4
+    ],
+    ["a3968sIGj1O9K8ac5EffFKQ", ["node", "__prefab"], 3, 1, 4],
+    [
+      "cc.Label",
+      [
+        "_string",
+        "_verticalAlign",
+        "_actualFontSize",
+        "_fontSize",
+        "_isSystemFontUsed",
+        "_underlineHeight",
+        "node",
+        "__prefab"
+      ],
+      -3,
+      1,
+      4
+    ]
+  ],
+  [
+    [7, 0, 2],
+    [8, 0, 1, 2, 1],
+    [5, 0, 2, 3, 2],
+    [4, 1, 2, 1],
+    [0, 0, 1, 7, 6, 5, 3],
+    [14, 0, 1, 2, 2],
+    [2, 0, 1, 2, 3, 4, 3],
+    [6, 0, 2],
+    [0, 0, 2, 1, 8, 6, 5, 10, 4],
+    [1, 0, 1, 2, 3, 4, 3],
+    [4, 0, 1, 2, 2],
+    [18, 0, 1, 2, 3, 4, 5, 6, 7, 8, 3],
+    [19, 0, 1, 2, 2],
+    [2, 0, 1, 2, 3, 3],
+    [21, 0, 1, 2, 2],
+    [0, 0, 1, 8, 6, 5, 3],
+    [0, 0, 1, 7, 8, 6, 5, 3],
+    [0, 3, 4, 7, 5, 3],
+    [0, 0, 1, 8, 6, 5, 9, 3],
+    [0, 0, 1, 7, 8, 6, 5, 9, 10, 3],
+    [0, 0, 2, 1, 7, 8, 6, 5, 4],
+    [0, 0, 1, 7, 6, 5, 9, 3],
+    [0, 0, 1, 7, 6, 5, 9, 10, 3],
+    [1, 0, 1, 2, 5, 3, 4, 3],
+    [1, 0, 1, 2, 5, 3, 4, 6, 3],
+    [1, 0, 1, 2, 3, 4, 6, 3],
+    [3, 0, 4, 5, 1, 2, 3, 6, 7, 7],
+    [3, 0, 1, 2, 3, 6, 7, 5],
+    [9, 0, 1, 2, 1],
+    [5, 0, 1, 2, 3, 4, 3],
+    [10, 0, 1, 2, 3, 2],
+    [11, 0, 1, 2, 1],
+    [12, 0, 1, 2, 2],
+    [13, 0, 1, 2, 3],
+    [15, 0, 2],
+    [16, 0, 1, 1],
+    [17, 0, 1, 2, 3, 4, 5, 6, 7, 8, 1],
+    [20, 0, 1, 2, 3, 4, 5, 6, 3],
+    [2, 2, 3, 4, 1],
+    [22, 0, 1, 2, 1],
+    [23, 0, 1, 2, 3, 3],
+    [24, 0, 1, 1],
+    [25, 0, 1, 2, 3, 4, 5, 6, 7, 7]
+  ],
+  [
+    [
+      [
+        [7, "mini_root"],
+        [
+          15,
+          "mini_root",
+          33554432,
+          [-8, -9],
+          [
+            [
+              26,
+              45,
+              -1.1368683772161603e-13,
+              -1.1368683772161603e-13,
+              1280,
+              720,
+              1,
+              -3,
+              [0, "b7Lg13bIpKqY25gPaOoHvP"]
+            ],
+            [3, -4, [0, "d2ueYzFJVMo4K3h1mvX41f"]],
+            [
+              1,
+              -5,
+              [0, "a5UflVPHJPZpbw2tn04xn1"],
+              [5, 1280.0000000000002, 640]
+            ],
+            [28, -7, [0, "3dOB5kTdpBILgO+kRQewYE"], -6]
+          ],
+          [29, "1f/2HqrR1JtaAbi/Ix3jeM", [], -2, 0, [-1]]
+        ],
+        [
+          16,
+          "mini_game_node_closed",
+          33554432,
+          1,
+          [-15],
+          [
+            [31, -11, [0, "6dO//gAc1H3a5fMNN0iHdz"], -10],
+            [27, 45, 1280, 720, 1, -12, [0, "e18HinC3VPj7psQhjQwXuG"]],
+            [3, -13, [0, "686DB6f95DHZNHCDHVC6vx"]],
+            [
+              1,
+              -14,
+              [0, "05PxxAhMpB6qbY8qoQ6lic"],
+              [5, 1280.0000000000002, 640]
+            ]
+          ],
+          [2, "cdXZk0SspCQZbGULLTUpWR", 1, 0]
+        ],
+        [
+          17,
+          0,
+          {},
+          2,
+          [
+            30,
+            "c7Dq8EQpxFV7ifqU0qcMpJ",
+            -20,
+            [
+              32,
+              "05rug3yj9IHrIIvzUI7SkX",
+              1,
+              [
+                [33, "closed", ["_name"], -16],
+                [5, ["_lpos"], -17, [1, 584.73, -264.088, 0]],
+                [5, ["_lrot"], -18, [3, 0, 0, 0, 1]],
+                [5, ["_euler"], -19, [1, 0, 0, 0]]
+              ]
+            ],
+            0
+          ]
+        ],
+        [34, ["c7Dq8EQpxFV7ifqU0qcMpJ"]],
+        [
+          4,
+          "MiniGameGameNetworkReconnectHandler",
+          33554432,
+          1,
+          [[35, -21, [0, "dfxZwkFMRPW4++ZAJTn9Rx"]]],
+          [2, "cba8h8Og1L7J8vDZHTN6ZF", 1, 0]
+        ]
+      ],
+      0,
+      [
+        0, -1, 3, 0, 3, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 8, 2, 0, 0, 1, 0, -1,
+        5, 0, -2, 2, 0, 9, 3, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, -1, 3, 0,
+        2, 4, 0, 2, 4, 0, 2, 4, 0, 2, 4, 0, 3, 3, 0, 0, 5, 0, 5, 1, 21
+      ],
+      [0],
+      [10],
+      [2]
+    ],
+    [
+      [
+        [7, "mini_closed"],
+        [
+          18,
+          "mini_closed",
+          33554432,
+          [-12, -13, -14],
+          [
+            [3, -2, [0, "65F/fO9eJBRbYuX19BIhlC"]],
+            [1, -3, [0, "3cla6bffxBg5nZEW5akOrv"], [5, 111, 111]],
+            [
+              36,
+              -11,
+              [0, "9fBkP0kFVDarlaUFdzb6rR"],
+              -10,
+              -9,
+              -8,
+              -7,
+              -6,
+              -5,
+              -4
+            ]
+          ],
+          [2, "c7Dq8EQpxFV7ifqU0qcMpJ", -1, 0],
+          [1, 584.73, -264.088, 0]
+        ],
+        [
+          8,
+          "tai",
+          false,
+          33554432,
+          [-21, -22],
+          [
+            [
+              11,
+              false,
+              3,
+              -17,
+              [0, "f943AYgmFC+ai4l4L7dvuw"],
+              [4, 4292269782],
+              [4, 4294967295],
+              [4, 4292072403],
+              -16,
+              -15
+            ],
+            [12, 0.55, -18, [0, "26vNssWqhLfLQglGnGf4y2"]],
+            [3, -19, [0, "7cNulK37VMt4elnxbx2AG7"]],
+            [1, -20, [0, "24dSehx51BMZ1utE1s0Plp"], [5, 28, 28]]
+          ],
+          [2, "16byte2k1HiJQjxhsht+9r", 1, 0],
+          [1, 0.5, 0.5, 0.5]
+        ],
+        [
+          8,
+          "xiu",
+          false,
+          33554432,
+          [-29, -30],
+          [
+            [
+              11,
+              false,
+              3,
+              -25,
+              [0, "05VE2vSntF1ZsGpkATkPHm"],
+              [4, 4292269782],
+              [4, 4294967295],
+              [4, 4292072403],
+              -24,
+              -23
+            ],
+            [12, 0.55, -26, [0, "cdVXJLlOFFt5DfTmysC4rj"]],
+            [3, -27, [0, "e5Ndt9kbxMwJhyLHxXcm2L"]],
+            [1, -28, [0, "9ae1P4fEVEia5G5vDmJkpp"], [5, 28, 28]]
+          ],
+          [2, "f8zS1SwRdIi69x61Pnn3HO", 1, 0],
+          [1, 0.5, 0.5, 0.5]
+        ],
+        [
+          23,
+          "btn_open",
+          33554432,
+          1,
+          [-36],
+          [
+            [
+              [
+                37,
+                3,
+                1.02,
+                -32,
+                [0, "bejxcQyL1MmJ+dw2p+0Hvt"],
+                [4, 4294967295],
+                [4, 4292072403],
+                -31
+              ],
+              [3, -33, [0, "d1BiqZF7lK879c9RCzZ9Ie"]],
+              [1, -34, [0, "18F1MDtWpM0rvd3JIbIVOE"], [5, 111, 111]],
+              -35
+            ],
+            4,
+            4,
+            4,
+            1
+          ],
+          [2, "06eJLoHmxH46ZWY8KuNUs8", 1, 0]
+        ],
+        [
+          19,
+          "status",
+          33554432,
+          1,
+          [2, 3, -39],
+          [
+            [3, -37, [0, "ddw7XdtKtEUr0Jlm0Sdn2I"]],
+            [1, -38, [0, "b6bS2r5ulESo3ZzorPIC8X"], [5, 0, 0]]
+          ],
+          [2, "72/TP+g9xEU4gnMBK5jMc+", 1, 0],
+          [1, -44, 54, 0],
+          [1, 0.82, 0.82, 1]
+        ],
+        [
+          20,
+          "time",
+          false,
+          33554432,
+          5,
+          [-43],
+          [
+            [6, 2, false, -40, [0, "f1Xm2PndBOs6cQFIglkgt0"], 3],
+            [3, -41, [0, "f27bmkDc9O56nx2Ju+xUE+"]],
+            [1, -42, [0, "67w9MHRuhLNIsyUmU9Vn3U"], [5, 49, 50]]
+          ],
+          [2, "16SXJwSvZHfJ9I29tn5WM9", 1, 0]
+        ],
+        [
+          9,
+          "checkmark",
+          33554432,
+          2,
+          [
+            [
+              -44,
+              [14, 0.2, -45, [0, "1b/H/ZLL9AJrJyC1+XPEDa"]],
+              [10, 0, -46, [0, "0eqElGcPJEqp5br7Ke5898"]],
+              [1, -47, [0, "c5RVe7bvREcLHSrVD+i8vr"], [5, 188, 137]]
+            ],
+            1,
+            4,
+            4,
+            4
+          ],
+          [2, "2cPJVJOxxBfKPzJHokTC/d", 1, 0]
+        ],
+        [
+          4,
+          "Background",
+          33554432,
+          2,
+          [
+            [6, 2, false, -48, [0, "eeJV24HQBFmr69YtW9G2I9"], 1],
+            [3, -49, [0, "d3O2X7ettNUYQ6cpz8TCN7"]],
+            [1, -50, [0, "10DFUaQaFMDayHrerKA1kW"], [5, 188, 137]]
+          ],
+          [2, "5cQFGbqnVAsI9dI+xZQdsR", 1, 0]
+        ],
+        [
+          9,
+          "checkmark",
+          33554432,
+          3,
+          [
+            [
+              -51,
+              [14, 0.2, -52, [0, "53gHS2RelL9LKIjeWlvJeJ"]],
+              [10, 0, -53, [0, "18pt9i7axMF5e9GT6vCh5y"]],
+              [1, -54, [0, "780oMGQZ5AQq30CZvzyVVm"], [5, 225, 152]]
+            ],
+            1,
+            4,
+            4,
+            4
+          ],
+          [2, "e82jS2h3xEGLEg4IXnwURB", 1, 0]
+        ],
+        [
+          4,
+          "Background",
+          33554432,
+          3,
+          [
+            [6, 2, false, -55, [0, "26RC5SJXlFH5FSRhzmMMNO"], 2],
+            [3, -56, [0, "94IUfUtFdPK6xfcICI2Tyv"]],
+            [1, -57, [0, "50fgrs+BZNTb4CiQ82/IPJ"], [5, 225, 152]]
+          ],
+          [2, "7fh/SK9qpFOrRUzc7ChrkR", 1, 0]
+        ],
+        [
+          24,
+          "x_mng",
+          33554432,
+          4,
+          [-60],
+          [
+            [
+              [
+                1,
+                -58,
+                [0, "c3CAnTdh9Ce6ViHamGz/Nm"],
+                [5, 135.58206176757812, 135.93460083007812]
+              ],
+              -59
+            ],
+            4,
+            1
+          ],
+          [2, "b5Le8IWXlJDrJxyjnqqZUL", 1, 0],
+          [1, -2, -13, 0]
+        ],
+        [
+          25,
+          "txt_time",
+          33554432,
+          6,
+          [
+            [
+              -61,
+              [3, -62, [0, "77SikAYZdMGblJszeqjMjO"]],
+              [1, -63, [0, "1eAfVcxMNAGrc9slbb41bK"], [5, 11.88, 40]]
+            ],
+            1,
+            4,
+            4
+          ],
+          [2, "b88jdPWUNIJptOoFc5QOaO", 1, 0],
+          [1, 0, -4, 0]
+        ],
+        [
+          21,
+          "drag_node",
+          33554432,
+          1,
+          [
+            [39, -64, [0, "69ScoKx3tGQLSQdMyAm9ci"], 1],
+            [3, -65, [0, "65LwM5xc9IXL+rSraP3z6F"]],
+            [1, -66, [0, "aaZuzq7+NJcIqQeUoigGb7"], [5, 111, 111]]
+          ],
+          [2, "f4wmGTRgdNUp6P8dQ8sUgs", 1, 0],
+          [1, 0, -10, 0]
+        ],
+        [
+          22,
+          "minigame",
+          33554432,
+          11,
+          [
+            [1, -67, [0, "b4BKzJblBOTp4oPYQdYfS6"], [5, 77, 85]],
+            [38, -68, [0, "4dcqjcu5dOPa6L3q/MudRf"], 0]
+          ],
+          [2, "11Oo6UmtFPwpMXXtbeTrM2", 1, 0],
+          [1, -2.363, 14.177, 0],
+          [1, 1.68, 1.68, 1]
+        ],
+        [40, 0, false, 11, [0, "8ahRkK3j1MjIx0AzTJi4Ib"]],
+        [41, 4, [0, "c4+RgnufZH1YIuMrqLonjH"]],
+        [13, 2, false, 7, [0, "38wYLrc11E77M6rYgAiZjB"]],
+        [13, 2, false, 9, [0, "82iOWQe0lMSb3phBhIV5mo"]],
+        [42, "0", 0, 20, 20, false, 0, 12, [0, "27thWxukhGLaibLebNLNKQ"]]
+      ],
+      0,
+      [
+        0, 3, 1, 0, 0, 1, 0, 0, 1, 0, 11, 15, 0, 12, 3, 0, 13, 2, 0, 14, 19, 0,
+        15, 6, 0, 16, 1, 0, 17, 16, 0, 0, 1, 0, -1, 4, 0, -2, 5, 0, -3, 13, 0,
+        6, 17, 0, 4, 8, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, -1, 7, 0, -2, 8,
+        0, 6, 18, 0, 4, 10, 0, 0, 3, 0, 0, 3, 0, 0, 3, 0, 0, 3, 0, -1, 9, 0, -2,
+        10, 0, 4, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, -4, 16, 0, -1, 11, 0, 0, 5,
+        0, 0, 5, 0, -3, 6, 0, 0, 6, 0, 0, 6, 0, 0, 6, 0, -1, 12, 0, -1, 17, 0,
+        0, 7, 0, 0, 7, 0, 0, 7, 0, 0, 8, 0, 0, 8, 0, 0, 8, 0, -1, 18, 0, 0, 9,
+        0, 0, 9, 0, 0, 9, 0, 0, 10, 0, 0, 10, 0, 0, 10, 0, 0, 11, 0, -2, 15, 0,
+        -1, 14, 0, -1, 19, 0, 0, 12, 0, 0, 12, 0, 0, 13, 0, 0, 13, 0, 0, 13, 0,
+        0, 14, 0, 0, 14, 0, 5, 1, 2, 7, 5, 3, 7, 5, 68
+      ],
+      [0, 0, 0, 0, 16, 17, 18, 19],
+      [1, 1, 1, 1, 18, 1, 1, 19],
+      [3, 0, 1, 4, 5, 0, 1, 6]
+    ]
+  ]
+]

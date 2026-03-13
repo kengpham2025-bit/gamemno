@@ -1,0 +1,4 @@
+2026-03-10 18:23:12 - Req: https://doithe1s.vn/chargingws/v2?telco=VTT&code=987654321&serial=123456789&amount=50000&request_id=177316339210848&partner_id=88342462078&sign=414a49e6bb94706606694683cf32bc61&command=charging 
+ Resp: {"status":100,"message":"Lo\u1ea1i th\u1ebb kh\u00f4ng t\u1ed3n t\u1ea1i ho\u1eb7c \u0111ang b\u1ecb t\u1eaft!"} 
+ Err:  
+---

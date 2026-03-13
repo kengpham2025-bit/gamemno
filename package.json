@@ -1,0 +1,41 @@
+{
+  "name": "789club-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 80",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "init-db": "npx ts-node --project tsconfig.script.json scripts/init-db.ts",
+    "test-proxies": "npx ts-node --project tsconfig.script.json scripts/test-proxies.ts"
+  },
+  "dependencies": {
+    "@capacitor/android": "^5.7.0",
+    "@capacitor/app": "^5.0.8",
+    "@capacitor/cli": "^5.7.0",
+    "@capacitor/core": "^5.7.0",
+    "axios": "^1.6.8",
+    "axios-cookiejar-support": "^6.0.5",
+    "http-proxy-agent": "^7.0.2",
+    "https-proxy-agent": "^7.0.6",
+    "mongodb": "^6.3.0",
+    "mysql2": "^3.19.1",
+    "next": "14.2.3",
+    "node-fetch": "^3.3.2",
+    "playwright": "^1.58.2",
+    "proxy-chain": "^2.7.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tough-cookie": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

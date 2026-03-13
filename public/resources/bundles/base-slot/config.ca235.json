@@ -1,0 +1,15 @@
+{
+  "importBase": "import",
+  "nativeBase": "native",
+  "name": "base-slot",
+  "deps": [],
+  "uuids": ["c0b9z4dIRAEKwEKrHedP2y"],
+  "paths": { "0": ["sounds/win_sfx", 0] },
+  "scenes": {},
+  "packs": {},
+  "versions": { "import": [0, "96387"], "native": [0, "d0821"] },
+  "redirect": [],
+  "debug": false,
+  "extensionMap": {},
+  "types": ["cc.AudioClip"]
+}

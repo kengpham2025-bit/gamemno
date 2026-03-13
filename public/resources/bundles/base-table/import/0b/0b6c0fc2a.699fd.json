@@ -1,0 +1,74 @@
+[
+  1,
+  ["158acf373@6c48a"],
+  ["_textureSource"],
+  ["cc.SpriteFrame", "cc.ImageAsset", "cc.Texture2D"],
+  0,
+  [
+    [[{ "fmt": "0", "w": 164, "h": 1007 }, -1], [1], 0, [], [], []],
+    [[{ "base": "2,2,0,0,0,0", "mipmaps": ["158acf373"] }], [2], 0, [], [], []],
+    [
+      [
+        {
+          "name": "ig_bc_dia",
+          "rect": { "x": 3, "y": 193, "width": 198, "height": 151 },
+          "offset": { "x": 1, "y": 0 },
+          "originalSize": { "width": 200, "height": 151 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "ig_chip_stand",
+          "rect": { "x": 3, "y": 397, "width": 607, "height": 106 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 607, "height": 106 },
+          "rotated": true,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ],
+    [
+      [
+        {
+          "name": "ig_dealer",
+          "rect": { "x": 3, "y": 3, "width": 158, "height": 184 },
+          "offset": { "x": 0, "y": 0 },
+          "originalSize": { "width": 158, "height": 184 },
+          "rotated": false,
+          "capInsets": [0, 0, 0, 0],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": { "x": 0.5, "y": 0.5 },
+          "meshType": 0
+        }
+      ],
+      [0],
+      0,
+      [0],
+      [0],
+      [0]
+    ]
+  ]
+]
