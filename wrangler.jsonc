@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "789club-proxy",
+  "compatibility_date": "2024-01-01",
+  "pages_build": {
+    "compatibility_flags": ["nodejs_compat"]
+  },
+  "vars": {
+    "NEXT_PUBLIC_UPSTREAM_BASE": "https://demo7892.fun"
+  },
+  "d1_databases": [],
+  "r2_buckets": []
+}

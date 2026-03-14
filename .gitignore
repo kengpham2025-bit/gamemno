@@ -33,3 +33,6 @@ coverage/
 temp/
 
 .vercel
+
+# OpenNext Cloudflare
+.open-next

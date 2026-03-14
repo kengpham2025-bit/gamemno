@@ -1,7 +1,10 @@
+const { initOpenNextCloudflareForDev } = require('@opennextjs/cloudflare/adapter');
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+let nextConfig = {
   reactStrictMode: false,
   output: 'standalone',
+};
   async rewrites() {
     return [
       // 确保 /distributor（无后续路径）也走 API，避免 403
@@ -52,5 +55,10 @@ const nextConfig = {
     ];
   },
 };
+
+// Initialize OpenNext Cloudflare for local development
+if (process.env.NODE_ENV === 'development') {
+  nextConfig = initOpenNextCloudflareForDev(nextConfig);
+}
 
 module.exports = nextConfig;

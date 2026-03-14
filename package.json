@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 80",
-    "build": "next build",
-    "start": "next start",
+    "dev": "opennextjs-cloudflare dev",
+    "build": "opennextjs-cloudflare build",
+    "start": "opennextjs-cloudflare start",
+    "preview": "opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare deploy",
     "lint": "next lint",
     "init-db": "npx ts-node --project tsconfig.script.json scripts/init-db.ts",
     "test-proxies": "npx ts-node --project tsconfig.script.json scripts/test-proxies.ts"
@@ -30,12 +32,14 @@
     "tough-cookie": "^6.0.1"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.17.1",
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.35",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "wrangler": "^4.73.0"
   }
 }
