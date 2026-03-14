@@ -16,9 +16,9 @@ export async function getConnection() {
   return pool.getConnection();
 }
 
-export async function query(sql: string, params?: any[]) {
+export async function query(sql: string, params?: any[]): Promise<any[]> {
   const [rows] = await pool.execute(sql, params);
-  return rows;
+  return rows as any[];
 }
 
 export async function initDatabase(): Promise<void> {

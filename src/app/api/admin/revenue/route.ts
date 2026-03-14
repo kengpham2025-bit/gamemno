@@ -48,7 +48,7 @@ async function handler(req: any, res: any) {
         ? { start_date: startDateFilter, end_date: endDateFilter }
         : {};
 
-      const [totalStats, todayStats, byMethod, recentList, filteredStats, filteredByMethod] = await Promise.all([
+      const [totalStats, todayStats, byMethodRaw, recentListRaw, filteredStats, filteredByMethodRaw] = await Promise.all([
         getPaygateStats({}),
         getPaygateStats({ start_date: todayStart, end_date: todayEnd }),
         getPaygateStatsByMethod(),
@@ -56,6 +56,10 @@ async function handler(req: any, res: any) {
         getPaygateStats(queryFilter),
         startDateFilter || endDateFilter ? getPaygateStatsByMethod(startDateFilter, endDateFilter) : Promise.resolve([]),
       ]);
+
+      const byMethod = byMethodRaw as any[];
+      const recentList = recentListRaw as any[];
+      const filteredByMethod = filteredByMethodRaw as any[];
 
       const byMethodMap: Record<string, { total_amount: number; count: number }> = {};
       (byMethod || []).forEach((r: any) => {

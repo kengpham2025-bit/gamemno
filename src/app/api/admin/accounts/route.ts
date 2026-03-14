@@ -18,7 +18,7 @@ async function handler(req: any, res: any) {
       const type = req.query?.type; // 'account' | 'admin' | undefined (both)
 
       if (type === 'admin') {
-        const adminUsers = await getAllAdminUsers();
+        const adminUsers = await getAllAdminUsers() as any[];
         return res.status(200).json({
           success: true,
           data: adminUsers.map((u: any) => ({
@@ -32,8 +32,10 @@ async function handler(req: any, res: any) {
         });
       }
 
-      const { list, total } = await getAccounts(limit, skip);
-        const data = list.map((a: any) => ({
+      const result = await getAccounts(limit, skip);
+      const list = result.list as any[];
+      const total = result.total;
+      const data = list.map((a: any) => ({
         id: a.id,
         _id: a.id != null ? String(a.id) : a._id?.toString(),
         username: a.username,
